@@ -1,0 +1,23 @@
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Terraform
+**/.terraform/
+*.tfstate*
+
+# Caches SAST
+.checkov/
+.trivy/
+.kics/
+
+# Módulos externos y salidas crudas
+corpus/descargados/
+iam_vulnerable/repo/
+resultados/crudos/
