@@ -1,0 +1,6921 @@
+[
+  {
+    "namespace": "terraform-aws-modules",
+    "name": "iam",
+    "version": "6.11.1",
+    "tag": "v6.11.1",
+    "published_at": "2026-11-17T13:20:38.432851Z",
+    "downloads": 445774201,
+    "verified": false,
+    "source": "https://github.com/terraform-aws-modules/terraform-aws-iam",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [],
+    "root_resources_total": 0,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 8,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "terraform-aws-modules",
+    "name": "s3-bucket",
+    "version": "5.18.0",
+    "tag": "v5.18.0",
+    "published_at": "2026-11-17T13:46:58.863754Z",
+    "downloads": 253312958,
+    "verified": false,
+    "source": "https://github.com/terraform-aws-modules/terraform-aws-s3-bucket",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 21,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 21,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 6,
+    "consultas_origen": [
+      "S3:s3",
+      "S3:s3-bucket"
+    ]
+  },
+  {
+    "namespace": "terraform-aws-modules",
+    "name": "vpc",
+    "version": "6.8.0",
+    "tag": "v6.8.0",
+    "published_at": "2026-11-17T02:25:51.618626Z",
+    "downloads": 233650419,
+    "verified": false,
+    "source": "https://github.com/terraform-aws-modules/terraform-aws-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 79,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 65,
+      "OTHER": 11
+    },
+    "submodules_count": 2,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "terraform-aws-modules",
+    "name": "security-group",
+    "version": "6.0.0",
+    "tag": "v6.0.0",
+    "published_at": "2026-06-03T13:53:49.075026Z",
+    "downloads": 156154264,
+    "verified": false,
+    "source": "https://github.com/terraform-aws-modules/terraform-aws-security-group",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 5,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 5,
+      "OTHER": 0
+    },
+    "submodules_count": 53,
+    "consultas_origen": [
+      "VPC_SG:security-group"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "security-group",
+    "version": "2.2.0",
+    "tag": "2.2.0",
+    "published_at": "2023-06-02T15:52:55.583181Z",
+    "downloads": 27073095,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-security-group",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/null",
+      "hashicorp/random"
+    ],
+    "root_resources_total": 6,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 4,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:security-group"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "iam-system-user",
+    "version": "1.2.1",
+    "tag": "1.2.1",
+    "published_at": "2024-03-04T15:50:24.290984Z",
+    "downloads": 26405665,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-iam-system-user",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 4,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "iam-s3-user",
+    "version": "1.2.1",
+    "tag": "1.2.1",
+    "published_at": "2024-03-08T15:41:50.629423Z",
+    "downloads": 24175351,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-iam-s3-user",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 1,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "s3-bucket",
+    "version": "4.15.0",
+    "tag": "v4.15.0",
+    "published_at": "2026-07-21T01:07:20.920007Z",
+    "downloads": 23357288,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-s3-bucket",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/time"
+    ],
+    "root_resources_total": 23,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 19,
+      "VPC_SG": 0,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "S3:s3",
+      "S3:s3-bucket"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "iam-role",
+    "version": "1.0.0",
+    "tag": "v1.0.0",
+    "published_at": "2026-05-20T14:43:31.262287Z",
+    "downloads": 19292833,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-iam-role",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 6,
+    "conteo_servicios": {
+      "IAM": 6,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:iam-role"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "s3-log-storage",
+    "version": "2.1.0",
+    "tag": "v2.1.0",
+    "published_at": "2026-09-08T21:44:29.410208Z",
+    "downloads": 14466268,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-s3-log-storage",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/time"
+    ],
+    "root_resources_total": 2,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 1,
+      "VPC_SG": 0,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "ViktorUJ",
+    "name": "vpc",
+    "version": "1.1.0",
+    "tag": "1.1.0",
+    "published_at": "2025-12-20T09:02:45.861729Z",
+    "downloads": 10530186,
+    "verified": false,
+    "source": "https://github.com/ViktorUJ/terraform-aws-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 28,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 25,
+      "OTHER": 3
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "eks-iam-role",
+    "version": "2.2.1",
+    "tag": "v2.2.1",
+    "published_at": "2025-01-22T03:19:28.939396Z",
+    "downloads": 7233139,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-eks-iam-role",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/local"
+    ],
+    "root_resources_total": 4,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "iam-policy",
+    "version": "2.0.2",
+    "tag": "v2.0.2",
+    "published_at": "2025-05-15T12:57:28.811633Z",
+    "downloads": 6316448,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-iam-policy",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/http"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:iam-policy"
+    ]
+  },
+  {
+    "namespace": "lacework",
+    "name": "iam-role",
+    "version": "0.4.5",
+    "tag": "v0.4.5",
+    "published_at": "2024-11-06T18:55:14.932348Z",
+    "downloads": 6247419,
+    "verified": false,
+    "source": "https://github.com/lacework/terraform-aws-iam-role",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "lacework/lacework",
+      "hashicorp/random"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 1,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:iam-role"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "lb-s3-bucket",
+    "version": "0.20.0",
+    "tag": "0.20.0",
+    "published_at": "2024-05-06T08:57:45.080148Z",
+    "downloads": 5884532,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-lb-s3-bucket",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 0,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "vpc",
+    "version": "3.0.1",
+    "tag": "v3.0.1",
+    "published_at": "2026-10-30T16:22:05.208755Z",
+    "downloads": 5258142,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 8,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 8,
+      "OTHER": 0
+    },
+    "submodules_count": 1,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "dynamic-subnets",
+    "version": "3.1.1",
+    "tag": "v3.1.1",
+    "published_at": "2026-02-17T17:39:00.715972Z",
+    "downloads": 4059831,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-dynamic-subnets",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 30,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 27,
+      "OTHER": 3
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "cloudfront-s3-cdn",
+    "version": "2.1.1",
+    "tag": "v2.1.1",
+    "published_at": "2026-05-20T13:06:31.140109Z",
+    "downloads": 3155937,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-cloudfront-s3-cdn",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/random",
+      "hashicorp/time"
+    ],
+    "root_resources_total": 14,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 8,
+      "VPC_SG": 0,
+      "OTHER": 6
+    },
+    "submodules_count": 1,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "helm-release",
+    "version": "0.10.1",
+    "tag": "0.10.1",
+    "published_at": "2023-09-28T06:32:55.37486Z",
+    "downloads": 2790542,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-helm-release",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/helm",
+      "hashicorp/kubernetes"
+    ],
+    "root_resources_total": 2,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "iam-policy-document-aggregator",
+    "version": "0.8.0",
+    "tag": "0.8.0",
+    "published_at": "2021-02-04T07:16:27.868712Z",
+    "downloads": 2691779,
+    "verified": false,
+    "source": "https://github.com/cloudposse-archives/terraform-aws-iam-policy-document-aggregator",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 0,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "tfstate-backend",
+    "version": "1.9.1",
+    "tag": "v1.9.1",
+    "published_at": "2026-10-23T16:16:16.898574Z",
+    "downloads": 2401196,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-tfstate-backend",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/local",
+      "hashicorp/time"
+    ],
+    "root_resources_total": 16,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 10,
+      "VPC_SG": 0,
+      "OTHER": 3
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "unfunco",
+    "name": "oidc-github",
+    "version": "3.1.0",
+    "tag": "v3.1.0",
+    "published_at": "2026-09-28T12:43:36.916176Z",
+    "downloads": 2006145,
+    "verified": false,
+    "source": "https://github.com/unfunco/terraform-aws-oidc-github",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/tls"
+    ],
+    "root_resources_total": 5,
+    "conteo_servicios": {
+      "IAM": 5,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:oidc"
+    ]
+  },
+  {
+    "namespace": "schubergphilis",
+    "name": "mcaf-role",
+    "version": "0.5.3",
+    "tag": "v0.5.3",
+    "published_at": "2025-03-25T10:05:28.004095Z",
+    "downloads": 1556745,
+    "verified": false,
+    "source": "https://github.com/schubergphilis/terraform-aws-mcaf-role",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "grem11n",
+    "name": "vpc-peering",
+    "version": "8.0.0",
+    "tag": "v8.0.0",
+    "published_at": "2025-08-20T18:13:47.397101Z",
+    "downloads": 1507468,
+    "verified": false,
+    "source": "https://github.com/grem11n/terraform-aws-vpc-peering",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 10,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 10,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "terraform-module",
+    "name": "github-oidc-provider",
+    "version": "2.3.0",
+    "tag": "v2.3.0",
+    "published_at": "2026-08-08T10:40:32.565923Z",
+    "downloads": 1463154,
+    "verified": false,
+    "source": "https://github.com/terraform-module/terraform-aws-github-oidc-provider",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:oidc"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "cloudtrail",
+    "version": "0.24.0",
+    "tag": "0.24.0",
+    "published_at": "2024-04-15T20:16:36.196101Z",
+    "downloads": 1364404,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-cloudtrail",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "vpc-peering-multi-account",
+    "version": "2.0.1",
+    "tag": "v2.0.1",
+    "published_at": "2026-06-24T19:07:48.249895Z",
+    "downloads": 1211619,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-vpc-peering-multi-account",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 8,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 8,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "philips-labs",
+    "name": "github-oidc",
+    "version": "0.8.1",
+    "tag": "v0.8.1",
+    "published_at": "2024-07-12T14:24:33.498689Z",
+    "downloads": 1140151,
+    "verified": false,
+    "source": "https://github.com/philips-labs/terraform-aws-github-oidc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/random"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 1
+    },
+    "submodules_count": 1,
+    "consultas_origen": [
+      "IAM:oidc"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "cloudtrail-s3-bucket",
+    "version": "0.33.0",
+    "tag": "v0.33.0",
+    "published_at": "2026-09-09T17:15:41.680155Z",
+    "downloads": 985757,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-cloudtrail-s3-bucket",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 0,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "baikonur-oss",
+    "name": "iam-nofile",
+    "version": "2.0.0",
+    "tag": "v2.0.0",
+    "published_at": "2020-02-06T06:26:08.483082Z",
+    "downloads": 931561,
+    "verified": false,
+    "source": "https://github.com/baikonur-oss/terraform-aws-iam-nofile",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "schubergphilis",
+    "name": "mcaf-s3",
+    "version": "3.0.0",
+    "tag": "v3.0.0",
+    "published_at": "2026-04-22T09:06:13.141394Z",
+    "downloads": 916677,
+    "verified": false,
+    "source": "https://github.com/schubergphilis/terraform-aws-mcaf-s3",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 16,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 15,
+      "VPC_SG": 0,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "aws-ia",
+    "name": "vpc",
+    "version": "4.9.0",
+    "tag": "v4.9.0",
+    "published_at": "2026-08-19T06:31:56.796194Z",
+    "downloads": 901295,
+    "verified": true,
+    "source": "https://github.com/aws-ia/terraform-aws-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 37,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 33,
+      "OTHER": 4
+    },
+    "submodules_count": 4,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "babbel",
+    "name": "alb-for-vpc-internal-requests",
+    "version": "4.0.1",
+    "tag": "v4.0.1",
+    "published_at": "2026-03-10T11:47:43.372219Z",
+    "downloads": 832695,
+    "verified": false,
+    "source": "https://github.com/babbel/terraform-aws-alb-for-vpc-internal-requests",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 4,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 2,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "trussworks",
+    "name": "logs",
+    "version": "18.0.0",
+    "tag": "v18.0.0",
+    "published_at": "2025-07-14T23:00:41.825731Z",
+    "downloads": 830941,
+    "verified": false,
+    "source": "https://github.com/trussworks/terraform-aws-logs",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 9,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 9,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "vpc-peering",
+    "version": "1.0.1",
+    "tag": "v1.0.1",
+    "published_at": "2025-03-05T20:06:06.459224Z",
+    "downloads": 777169,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-vpc-peering",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 3,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "ec2-bastion-server",
+    "version": "0.31.2",
+    "tag": "v0.31.2",
+    "published_at": "2025-11-25T18:07:43.698191Z",
+    "downloads": 752487,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-ec2-bastion-server",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 5,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "squareops",
+    "name": "tfstate",
+    "version": "1.1.1",
+    "tag": "v1.1.1",
+    "published_at": "2024-08-20T08:54:12.588468Z",
+    "downloads": 686874,
+    "verified": false,
+    "source": "https://github.com/squareops/terraform-aws-tfstate",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 8,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 4
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "babbel",
+    "name": "iam-role-for-github-repository",
+    "version": "5.0.0",
+    "tag": "v5.0.0",
+    "published_at": "2026-10-01T09:39:32.165283Z",
+    "downloads": 621703,
+    "verified": false,
+    "source": "https://github.com/babbel/terraform-aws-iam-role-for-github-repository",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 1,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "babbel",
+    "name": "athena",
+    "version": "4.1.1",
+    "tag": "v4.1.1",
+    "published_at": "2026-03-10T11:40:45.043661Z",
+    "downloads": 602955,
+    "verified": false,
+    "source": "https://github.com/babbel/terraform-aws-athena",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 6,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 5,
+      "VPC_SG": 0,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "squareops",
+    "name": "vpc",
+    "version": "3.4.1",
+    "tag": "v3.4.1",
+    "published_at": "2024-08-20T08:58:23.993287Z",
+    "downloads": 535076,
+    "verified": false,
+    "source": "https://github.com/squareops/terraform-aws-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 7,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 7,
+      "OTHER": 0
+    },
+    "submodules_count": 2,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "babbel",
+    "name": "cloudfront-bucket",
+    "version": "2.2.0",
+    "tag": "v2.2.0",
+    "published_at": "2026-08-28T10:29:27.001039Z",
+    "downloads": 508796,
+    "verified": false,
+    "source": "https://github.com/babbel/terraform-aws-cloudfront-bucket",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 5,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 3,
+      "VPC_SG": 0,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "vpc-flow-logs-s3-bucket",
+    "version": "1.4.0",
+    "tag": "v1.4.0",
+    "published_at": "2026-06-02T23:46:37.738073Z",
+    "downloads": 498524,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-vpc-flow-logs-s3-bucket",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 1,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3",
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "aws-ia",
+    "name": "iam-identity-center",
+    "version": "1.0.4",
+    "tag": "v1.0.4",
+    "published_at": "2025-10-10T15:44:01.694528Z",
+    "downloads": 408658,
+    "verified": false,
+    "source": "https://github.com/aws-ia/terraform-aws-iam-identity-center",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/awscc"
+    ],
+    "root_resources_total": 17,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 17
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "reegnz",
+    "name": "oidc-provider-data",
+    "version": "0.0.4",
+    "tag": "v0.0.4",
+    "published_at": "2022-08-25T16:28:42.940943Z",
+    "downloads": 408440,
+    "verified": false,
+    "source": "https://github.com/reegnz/terraform-aws-oidc-provider-data",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 0,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:oidc"
+    ]
+  },
+  {
+    "namespace": "cn-terraform",
+    "name": "logs-s3-bucket",
+    "version": "2.0.1",
+    "tag": "2.0.1",
+    "published_at": "2026-02-24T23:47:23.577206Z",
+    "downloads": 389457,
+    "verified": false,
+    "source": "https://github.com/cn-terraform/terraform-aws-logs-s3-bucket",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 6,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 6,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "nozaq",
+    "name": "remote-state-s3-backend",
+    "version": "1.6.1",
+    "tag": "v1.6.1",
+    "published_at": "2024-04-20T21:45:50.865442Z",
+    "downloads": 374765,
+    "verified": false,
+    "source": "https://github.com/nozaq/terraform-aws-remote-state-s3-backend",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 26,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 18,
+      "VPC_SG": 0,
+      "OTHER": 4
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "trussworks",
+    "name": "s3-private-bucket",
+    "version": "9.0.1",
+    "tag": "v9.0.1",
+    "published_at": "2025-08-22T11:10:44.188927Z",
+    "downloads": 344406,
+    "verified": false,
+    "source": "https://github.com/trussworks/terraform-aws-s3-private-bucket",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 13,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 13,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "mineiros-io",
+    "name": "s3-bucket",
+    "version": "0.6.0",
+    "tag": "v0.6.0",
+    "published_at": "2021-07-25T17:11:23.99624Z",
+    "downloads": 319509,
+    "verified": false,
+    "source": "https://github.com/mineiros-io/terraform-aws-s3-bucket",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 5,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 4,
+      "VPC_SG": 0,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3",
+      "S3:s3-bucket"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "config-storage",
+    "version": "1.0.2",
+    "tag": "1.0.2",
+    "published_at": "2023-08-07T18:30:39.595235Z",
+    "downloads": 299126,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-config-storage",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 0,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "terraform-redhat",
+    "name": "rosa-sts",
+    "version": "0.0.16",
+    "tag": "v0.0.16",
+    "published_at": "2024-06-19T11:12:36.61148Z",
+    "downloads": 282967,
+    "verified": false,
+    "source": "https://github.com/terraform-redhat/terraform-aws-rosa-sts",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/null"
+    ],
+    "root_resources_total": 2,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "dwp",
+    "name": "vpc",
+    "version": "3.0.24",
+    "tag": "3.0.24",
+    "published_at": "2023-02-27T12:36:09.788203Z",
+    "downloads": 263335,
+    "verified": false,
+    "source": "https://github.com/dwp/terraform-aws-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 18,
+    "conteo_servicios": {
+      "IAM": 5,
+      "S3": 0,
+      "VPC_SG": 12,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "grodzik",
+    "name": "iam_policy",
+    "version": "0.1.0",
+    "tag": "v0.1",
+    "published_at": "2019-09-16T21:11:37.856943Z",
+    "downloads": 255918,
+    "verified": false,
+    "source": "https://github.com/grodzik/terraform-aws-iam_policy",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 1,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "rallyware",
+    "name": "eks-iam-role",
+    "version": "0.3.0",
+    "tag": "0.3.0",
+    "published_at": "2024-03-04T17:51:12.276905Z",
+    "downloads": 251117,
+    "verified": false,
+    "source": "https://github.com/rallyware/terraform-aws-eks-iam-role",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/local"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "dcos-terraform",
+    "name": "iam",
+    "version": "0.3.0",
+    "tag": "0.3.0",
+    "published_at": "2020-07-07T09:44:52.28072Z",
+    "downloads": 237604,
+    "verified": false,
+    "source": "https://github.com/dcos-terraform/terraform-aws-iam",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 6,
+    "conteo_servicios": {
+      "IAM": 6,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "dcos-terraform",
+    "name": "vpc",
+    "version": "0.3.0",
+    "tag": "0.3.0",
+    "published_at": "2020-07-07T09:44:27.259155Z",
+    "downloads": 237430,
+    "verified": false,
+    "source": "https://github.com/dcos-terraform/terraform-aws-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 4,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 4,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "terraform-module",
+    "name": "lambda",
+    "version": "2.13.1",
+    "tag": "v2.13.1",
+    "published_at": "2024-01-07T20:30:37.965884Z",
+    "downloads": 236523,
+    "verified": false,
+    "source": "https://github.com/terraform-module/terraform-aws-lambda",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 4,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 4
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "schubergphilis",
+    "name": "mcaf-user",
+    "version": "1.0.0",
+    "tag": "v1.0.0",
+    "published_at": "2025-10-06T11:38:48.278341Z",
+    "downloads": 211197,
+    "verified": false,
+    "source": "https://github.com/schubergphilis/terraform-aws-mcaf-user",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 9,
+    "conteo_servicios": {
+      "IAM": 6,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 3
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "truemark",
+    "name": "provisioner",
+    "version": "1.1.5",
+    "tag": "v1.1.5",
+    "published_at": "2024-06-12T12:11:46.465436Z",
+    "downloads": 209029,
+    "verified": false,
+    "source": "https://github.com/truemark/terraform-aws-provisioner",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 13,
+    "conteo_servicios": {
+      "IAM": 13,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "boldlink",
+    "name": "s3",
+    "version": "2.6.0",
+    "tag": "2.6.0",
+    "published_at": "2025-07-20T16:08:33.820674Z",
+    "downloads": 205756,
+    "verified": false,
+    "source": "https://github.com/boldlink/terraform-aws-s3",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 12,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 12,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "truemark",
+    "name": "bitbucket-oidc-provisioner",
+    "version": "0.0.8",
+    "tag": "v0.0.8",
+    "published_at": "2024-06-12T11:59:20.189652Z",
+    "downloads": 201965,
+    "verified": false,
+    "source": "https://github.com/truemark/terraform-aws-bitbucket-oidc-provisioner",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 4,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:oidc"
+    ]
+  },
+  {
+    "namespace": "boldlink",
+    "name": "vpc",
+    "version": "3.3.0",
+    "tag": "3.3.0",
+    "published_at": "2025-01-28T16:28:19.030189Z",
+    "downloads": 199840,
+    "verified": false,
+    "source": "https://github.com/boldlink/terraform-aws-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 9,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 0,
+      "VPC_SG": 6,
+      "OTHER": 1
+    },
+    "submodules_count": 3,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "boldlink",
+    "name": "iam-role",
+    "version": "2.0.0",
+    "tag": "2.0.0",
+    "published_at": "2025-02-17T21:20:53.824847Z",
+    "downloads": 198217,
+    "verified": false,
+    "source": "https://github.com/boldlink/terraform-aws-iam-role",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 4,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:iam-role"
+    ]
+  },
+  {
+    "namespace": "boldlink",
+    "name": "iam-group",
+    "version": "1.1.0",
+    "tag": "1.1.0",
+    "published_at": "2024-07-18T15:03:50.68319Z",
+    "downloads": 197839,
+    "verified": false,
+    "source": "https://github.com/boldlink/terraform-aws-iam-group",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 4,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "boldlink",
+    "name": "iam-policy",
+    "version": "1.1.0",
+    "tag": "1.1.0",
+    "published_at": "2023-10-18T05:59:42.378873Z",
+    "downloads": 197270,
+    "verified": false,
+    "source": "https://github.com/boldlink/terraform-aws-iam-policy",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 2,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:iam-policy"
+    ]
+  },
+  {
+    "namespace": "boldlink",
+    "name": "iam-user",
+    "version": "1.0.3",
+    "tag": "1.0.3",
+    "published_at": "2022-07-22T13:13:45.889424Z",
+    "downloads": 196725,
+    "verified": false,
+    "source": "https://github.com/boldlink/terraform-aws-iam-user",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 4,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:iam-user"
+    ]
+  },
+  {
+    "namespace": "boldlink",
+    "name": "vpc-endpoints",
+    "version": "1.0.3",
+    "tag": "1.0.3",
+    "published_at": "2024-04-23T09:46:44.244532Z",
+    "downloads": 195881,
+    "verified": false,
+    "source": "https://github.com/boldlink/terraform-aws-vpc-endpoints",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 2,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 2,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "hmrc",
+    "name": "s3-bucket-core",
+    "version": "3.2.2",
+    "tag": "3.2.2",
+    "published_at": "2026-10-16T11:45:59.675895Z",
+    "downloads": 195772,
+    "verified": false,
+    "source": "https://github.com/hmrc/terraform-aws-s3-bucket-core",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 11,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 9,
+      "VPC_SG": 0,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "truemark",
+    "name": "bitbucket-oidc-provider",
+    "version": "0.0.5",
+    "tag": "v0.0.5",
+    "published_at": "2024-06-12T18:45:57.181231Z",
+    "downloads": 177875,
+    "verified": false,
+    "source": "https://github.com/truemark/terraform-aws-bitbucket-oidc-provider",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 1,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:oidc"
+    ]
+  },
+  {
+    "namespace": "masterpointio",
+    "name": "tailscale",
+    "version": "3.0.1",
+    "tag": "v3.0.1",
+    "published_at": "2026-10-31T16:12:16.232858Z",
+    "downloads": 172397,
+    "verified": false,
+    "source": "https://github.com/masterpointio/terraform-aws-tailscale",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "tailscale/tailscale"
+    ],
+    "root_resources_total": 4,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "cn-terraform",
+    "name": "s3-static-website",
+    "version": "1.2.0",
+    "tag": "1.2.0",
+    "published_at": "2026-03-09T11:28:16.404921Z",
+    "downloads": 163003,
+    "verified": false,
+    "source": "https://github.com/cn-terraform/terraform-aws-s3-static-website",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 19,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 9,
+      "VPC_SG": 6,
+      "OTHER": 4
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "fdmsantos",
+    "name": "kinesis-firehose",
+    "version": "4.0.0",
+    "tag": "v4.0.0",
+    "published_at": "2026-08-25T09:44:20.491917Z",
+    "downloads": 159464,
+    "verified": false,
+    "source": "https://github.com/fdmsantos/terraform-aws-kinesis-firehose",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 46,
+    "conteo_servicios": {
+      "IAM": 36,
+      "S3": 0,
+      "VPC_SG": 5,
+      "OTHER": 5
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "appvia",
+    "name": "oidc",
+    "version": "3.3.0",
+    "tag": "v3.3.0",
+    "published_at": "2026-10-15T14:48:04.042508Z",
+    "downloads": 156134,
+    "verified": false,
+    "source": "https://github.com/appvia/terraform-aws-oidc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 0,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 3,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:oidc"
+    ]
+  },
+  {
+    "namespace": "sprylab",
+    "name": "purple-s3-cloudfront",
+    "version": "0.5.0",
+    "tag": "0.5.0",
+    "published_at": "2026-11-11T07:57:35.743147Z",
+    "downloads": 147679,
+    "verified": false,
+    "source": "https://github.com/sprylab/terraform-aws-purple-s3-cloudfront",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 8,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 4
+    },
+    "submodules_count": 2,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "s3-website",
+    "version": "0.18.0",
+    "tag": "0.18.0",
+    "published_at": "2023-08-02T06:30:42.375716Z",
+    "downloads": 143588,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-s3-website",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/local"
+    ],
+    "root_resources_total": 4,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 4,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "cookielab",
+    "name": "static-site",
+    "version": "4.16.0",
+    "tag": "4.16.0",
+    "published_at": "2026-10-15T12:36:29.268626Z",
+    "downloads": 137480,
+    "verified": false,
+    "source": "https://github.com/cookielab/terraform-aws-static-site",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "gitlabhq/gitlab"
+    ],
+    "root_resources_total": 17,
+    "conteo_servicios": {
+      "IAM": 6,
+      "S3": 0,
+      "VPC_SG": 2,
+      "OTHER": 9
+    },
+    "submodules_count": 2,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "telia-oss",
+    "name": "vpc",
+    "version": "6.1.0",
+    "tag": "v6.1.0",
+    "published_at": "2026-02-04T12:40:53.904193Z",
+    "downloads": 131865,
+    "verified": false,
+    "source": "https://github.com/telia-oss/terraform-aws-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 17,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 16,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "umotif-public",
+    "name": "vpc-flow-logs",
+    "version": "1.1.2",
+    "tag": "1.1.2",
+    "published_at": "2020-11-09T09:29:52.033128Z",
+    "downloads": 129693,
+    "verified": false,
+    "source": "https://github.com/umotif-public/terraform-aws-vpc-flow-logs",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 5,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 1,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "trussworks",
+    "name": "s3-anti-virus",
+    "version": "5.0.1",
+    "tag": "v5.0.1",
+    "published_at": "2025-01-11T16:56:30.862618Z",
+    "downloads": 121682,
+    "verified": false,
+    "source": "https://github.com/trussworks/terraform-aws-s3-anti-virus",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 13,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 1,
+      "VPC_SG": 0,
+      "OTHER": 8
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "aws-ia",
+    "name": "amazon-vpc-lattice-module",
+    "version": "1.1.0",
+    "tag": "v1.1.0",
+    "published_at": "2025-06-06T16:44:05.333276Z",
+    "downloads": 113872,
+    "verified": false,
+    "source": "https://github.com/aws-ia/terraform-aws-amazon-vpc-lattice-module",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 20,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 16,
+      "OTHER": 4
+    },
+    "submodules_count": 3,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "Flaconi",
+    "name": "iam-user",
+    "version": "1.0.0",
+    "tag": "v1.0.0",
+    "published_at": "2021-10-04T11:01:48.990683Z",
+    "downloads": 112074,
+    "verified": false,
+    "source": "https://github.com/Flaconi/terraform-aws-iam-user",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 6,
+    "conteo_servicios": {
+      "IAM": 6,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:iam-user"
+    ]
+  },
+  {
+    "namespace": "lacework",
+    "name": "s3-data-export",
+    "version": "1.3.4",
+    "tag": "v1.3.4",
+    "published_at": "2024-11-06T19:58:07.917662Z",
+    "downloads": 112000,
+    "verified": false,
+    "source": "https://github.com/lacework/terraform-aws-s3-data-export",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "lacework/lacework",
+      "hashicorp/random",
+      "hashicorp/time"
+    ],
+    "root_resources_total": 18,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 11,
+      "VPC_SG": 0,
+      "OTHER": 5
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "milliHQ",
+    "name": "next-js",
+    "version": "1.0.0-canary.5",
+    "tag": "v1.0.0-canary.5",
+    "published_at": "2022-07-12T22:23:33.456934Z",
+    "downloads": 111764,
+    "verified": false,
+    "source": "https://github.com/milliHQ/terraform-aws-next-js",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 5,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 3
+    },
+    "submodules_count": 7,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "tedilabs",
+    "name": "account",
+    "version": "0.34.1",
+    "tag": "v0.34.1",
+    "published_at": "2026-10-11T23:46:57.327961Z",
+    "downloads": 109162,
+    "verified": false,
+    "source": "https://github.com/tedilabs/terraform-aws-account",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [],
+    "root_resources_total": 0,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 10,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "truemark",
+    "name": "github-oidc-provisioner",
+    "version": "0.0.5",
+    "tag": "v0.0.5",
+    "published_at": "2024-06-12T12:03:17.805801Z",
+    "downloads": 105937,
+    "verified": false,
+    "source": "https://github.com/truemark/terraform-aws-github-oidc-provisioner",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/tls"
+    ],
+    "root_resources_total": 4,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:oidc"
+    ]
+  },
+  {
+    "namespace": "truemark",
+    "name": "iam-policies",
+    "version": "0.2.12",
+    "tag": "v0.2.12",
+    "published_at": "2025-10-24T15:36:27.265124Z",
+    "downloads": 104052,
+    "verified": false,
+    "source": "https://github.com/truemark/terraform-aws-iam-policies",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 1,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "vpn-connection",
+    "version": "1.10.0",
+    "tag": "v1.10.0",
+    "published_at": "2026-04-28T13:09:49.310731Z",
+    "downloads": 103413,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-vpn-connection",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 10,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 10
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "kota65535",
+    "name": "s3-deployment",
+    "version": "1.8.0",
+    "tag": "v1.8.0",
+    "published_at": "2025-09-17T03:07:46.176784Z",
+    "downloads": 99884,
+    "verified": false,
+    "source": "https://github.com/kota65535/terraform-aws-s3-deployment",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "scottwinkler/shell",
+      "kota65535/temporary",
+      "kota65535/unarchive",
+      "pseudo-dynamic/value"
+    ],
+    "root_resources_total": 2,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "GoCarrot",
+    "name": "circleci_oidc",
+    "version": "0.1.2",
+    "tag": "v0.1.2",
+    "published_at": "2023-12-09T01:54:39.070421Z",
+    "downloads": 98443,
+    "verified": false,
+    "source": "https://github.com/GoCarrot/terraform-aws-circleci_oidc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/tls"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 1,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:oidc"
+    ]
+  },
+  {
+    "namespace": "clouddrove",
+    "name": "iam-role",
+    "version": "1.4.0",
+    "tag": "v1.4.0",
+    "published_at": "2026-06-04T14:13:56.422826Z",
+    "downloads": 96541,
+    "verified": false,
+    "source": "https://github.com/clouddrove/terraform-aws-iam-role",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 4,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 1,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:iam-role"
+    ]
+  },
+  {
+    "namespace": "babbel",
+    "name": "nlb-for-apigateway-vpc-link",
+    "version": "2.1.0",
+    "tag": "v2.1.0",
+    "published_at": "2026-03-10T11:27:07.755822Z",
+    "downloads": 93750,
+    "verified": false,
+    "source": "https://github.com/babbel/terraform-aws-nlb-for-apigateway-vpc-link",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 2,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "infrablocks",
+    "name": "encrypted-bucket",
+    "version": "3.4.0-rc.2",
+    "tag": "3.4.0-rc.2",
+    "published_at": "2026-10-22T10:51:36.801223Z",
+    "downloads": 93310,
+    "verified": false,
+    "source": "https://github.com/infrablocks/terraform-aws-encrypted-bucket",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 10,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 10,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "ssm-patch-manager",
+    "version": "1.0.3",
+    "tag": "v1.0.3",
+    "published_at": "2026-04-14T00:38:32.534184Z",
+    "downloads": 92579,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-ssm-patch-manager",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 9,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 9
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "saidsef",
+    "name": "terraform-cloud-oidc",
+    "version": "1.8.4",
+    "tag": "v1.8.4",
+    "published_at": "2026-06-05T19:18:26.172236Z",
+    "downloads": 89862,
+    "verified": false,
+    "source": "https://github.com/saidsef/terraform-aws-terraform-cloud-oidc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/tls"
+    ],
+    "root_resources_total": 5,
+    "conteo_servicios": {
+      "IAM": 5,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:oidc"
+    ]
+  },
+  {
+    "namespace": "telia-oss",
+    "name": "iam",
+    "version": "1.0.0",
+    "tag": "v1.0.0",
+    "published_at": "2021-02-11T16:03:55.008069Z",
+    "downloads": 89614,
+    "verified": false,
+    "source": "https://github.com/telia-oss/terraform-aws-iam",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [],
+    "root_resources_total": 0,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 4,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "umotif-public",
+    "name": "bastion",
+    "version": "2.8.0",
+    "tag": "2.8.0",
+    "published_at": "2025-11-13T11:52:56.445299Z",
+    "downloads": 86926,
+    "verified": false,
+    "source": "https://github.com/umotif-public/terraform-aws-bastion",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 8,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 1,
+      "OTHER": 4
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "appvia",
+    "name": "network",
+    "version": "0.7.0",
+    "tag": "v0.7.0",
+    "published_at": "2026-07-17T17:11:49.948916Z",
+    "downloads": 85121,
+    "verified": false,
+    "source": "https://github.com/appvia/terraform-aws-network",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 11,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 10,
+      "OTHER": 1
+    },
+    "submodules_count": 2,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "tinfoilcipher",
+    "name": "eks-service-account-with-oidc-iam-role",
+    "version": "0.1.5",
+    "tag": "v0.1.5",
+    "published_at": "2024-10-18T09:45:46.02592Z",
+    "downloads": 84772,
+    "verified": false,
+    "source": "https://github.com/tinfoilcipher/terraform-aws-eks-service-account-with-oidc-iam-role",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/kubernetes"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:oidc"
+    ]
+  },
+  {
+    "namespace": "trussworks",
+    "name": "vpc-flow-logs",
+    "version": "2.2.0",
+    "tag": "v2.2.0",
+    "published_at": "2021-04-09T17:42:38.427633Z",
+    "downloads": 81133,
+    "verified": false,
+    "source": "https://github.com/trussworks/terraform-aws-vpc-flow-logs",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 4,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 0,
+      "VPC_SG": 1,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "iam-account-settings",
+    "version": "0.5.0",
+    "tag": "0.5.0",
+    "published_at": "2023-05-17T09:12:48.289845Z",
+    "downloads": 79327,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-iam-account-settings",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 2,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "infrahouse",
+    "name": "github-role",
+    "version": "1.6.0",
+    "tag": "1.6.0",
+    "published_at": "2026-10-09T03:00:12.999221Z",
+    "downloads": 78982,
+    "verified": false,
+    "source": "https://github.com/infrahouse/terraform-aws-github-role",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 1,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:oidc"
+    ]
+  },
+  {
+    "namespace": "saidsef",
+    "name": "github-oidc",
+    "version": "2.3.0",
+    "tag": "v2.3.0",
+    "published_at": "2026-03-10T20:03:25.413286Z",
+    "downloads": 78704,
+    "verified": false,
+    "source": "https://github.com/saidsef/terraform-aws-github-oidc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/tls"
+    ],
+    "root_resources_total": 5,
+    "conteo_servicios": {
+      "IAM": 5,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:oidc"
+    ]
+  },
+  {
+    "namespace": "saidsef",
+    "name": "gitlab-oidc",
+    "version": "2.3.1",
+    "tag": "v2.3.1",
+    "published_at": "2026-05-31T11:41:11.277468Z",
+    "downloads": 78059,
+    "verified": false,
+    "source": "https://github.com/saidsef/terraform-aws-gitlab-oidc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/tls"
+    ],
+    "root_resources_total": 5,
+    "conteo_servicios": {
+      "IAM": 5,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:oidc"
+    ]
+  },
+  {
+    "namespace": "aidanmelen",
+    "name": "security-group-v2",
+    "version": "2.1.2",
+    "tag": "v2.1.2",
+    "published_at": "2022-12-01T03:42:56.921594Z",
+    "downloads": 76583,
+    "verified": false,
+    "source": "https://github.com/aidanmelen/terraform-aws-security-group-v2",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 14,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 14,
+      "OTHER": 0
+    },
+    "submodules_count": 2,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "hmrc",
+    "name": "s3-bucket-standard",
+    "version": "3.3.3",
+    "tag": "3.3.3",
+    "published_at": "2026-10-22T14:58:37.146969Z",
+    "downloads": 74450,
+    "verified": false,
+    "source": "https://github.com/hmrc/terraform-aws-s3-bucket-standard",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 1,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "clouddrove",
+    "name": "vpc",
+    "version": "2.0.5",
+    "tag": "v2.0.5",
+    "published_at": "2026-05-25T17:00:08.742008Z",
+    "downloads": 73718,
+    "verified": false,
+    "source": "https://github.com/clouddrove/terraform-aws-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 30,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 7,
+      "VPC_SG": 16,
+      "OTHER": 4
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "StratusGrid",
+    "name": "iam-role-cross-account-trusting",
+    "version": "2.1.1",
+    "tag": "v2.1.1",
+    "published_at": "2024-04-12T23:50:52.28638Z",
+    "downloads": 72815,
+    "verified": false,
+    "source": "https://github.com/StratusGrid/terraform-aws-iam-role-cross-account-trusting",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 2,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "Smartbrood",
+    "name": "ec2-iam-role",
+    "version": "0.5.0",
+    "tag": "v0.5.0",
+    "published_at": "2020-11-16T07:29:28.188186Z",
+    "downloads": 72586,
+    "verified": false,
+    "source": "https://github.com/Smartbrood/terraform-aws-ec2-iam-role",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "devops-made-easy",
+    "name": "kms-share-multi-accounts",
+    "version": "2.0.0",
+    "tag": "2.0.0",
+    "published_at": "2021-09-28T00:24:08.494822Z",
+    "downloads": 72189,
+    "verified": false,
+    "source": "https://github.com/devops-made-easy/terraform-aws-kms-share-multi-accounts",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/template"
+    ],
+    "root_resources_total": 2,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "iam-user",
+    "version": "0.9.0",
+    "tag": "0.9.0",
+    "published_at": "2023-05-17T09:11:55.90462Z",
+    "downloads": 71516,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-iam-user",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/null"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:iam-user"
+    ]
+  },
+  {
+    "namespace": "Cloud-42",
+    "name": "ec2-iam-role",
+    "version": "4.0.0",
+    "tag": "v4.0",
+    "published_at": "2021-02-12T10:01:16.678948Z",
+    "downloads": 70900,
+    "verified": false,
+    "source": "https://github.com/Cloud-42/terraform-aws-ec2-iam-role",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "eks-workers",
+    "version": "1.3.0",
+    "tag": "1.3.0",
+    "published_at": "2024-08-09T10:12:14.696864Z",
+    "downloads": 70834,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-eks-workers",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 12,
+    "conteo_servicios": {
+      "IAM": 6,
+      "S3": 0,
+      "VPC_SG": 6,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "truemark",
+    "name": "github-oidc-provider",
+    "version": "0.0.2",
+    "tag": "v0.0.2",
+    "published_at": "2023-03-15T15:23:13.884212Z",
+    "downloads": 69468,
+    "verified": false,
+    "source": "https://github.com/truemark/terraform-aws-github-oidc-provider",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/tls"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 1,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:oidc"
+    ]
+  },
+  {
+    "namespace": "SevenPicoForks",
+    "name": "s3-bucket",
+    "version": "4.1.2",
+    "tag": "4.1.2",
+    "published_at": "2026-04-15T00:02:25.065592Z",
+    "downloads": 68123,
+    "verified": false,
+    "source": "https://github.com/SevenPicoForks/terraform-aws-s3-bucket",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/time"
+    ],
+    "root_resources_total": 17,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 14,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 2,
+    "consultas_origen": [
+      "IAM:iam",
+      "S3:s3",
+      "S3:s3-bucket"
+    ]
+  },
+  {
+    "namespace": "andreswebs",
+    "name": "eks-irsa-policy-document",
+    "version": "1.0.0",
+    "tag": "1.0.0",
+    "published_at": "2021-07-20T14:35:33.7862Z",
+    "downloads": 67900,
+    "verified": false,
+    "source": "https://github.com/andreswebs/terraform-aws-eks-irsa-policy-document",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 0,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "schubergphilis",
+    "name": "mcaf-vpc",
+    "version": "3.1.0",
+    "tag": "v3.1.0",
+    "published_at": "2025-10-06T14:50:57.596975Z",
+    "downloads": 66946,
+    "verified": false,
+    "source": "https://github.com/schubergphilis/terraform-aws-mcaf-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 39,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 34,
+      "OTHER": 5
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "QuiNovas",
+    "name": "vpc-peering",
+    "version": "3.0.4",
+    "tag": "v3.0.4",
+    "published_at": "2022-10-19T10:31:47.017641Z",
+    "downloads": 66399,
+    "verified": false,
+    "source": "https://github.com/QuiNovas/terraform-aws-vpc-peering",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 8,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 8,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "QuiNovas",
+    "name": "log-bucket",
+    "version": "4.0.1",
+    "tag": "v4.0.1",
+    "published_at": "2024-01-16T04:00:09.060536Z",
+    "downloads": 65298,
+    "verified": false,
+    "source": "https://github.com/QuiNovas/terraform-aws-log-bucket",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 5,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 5,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "terraform-module",
+    "name": "gitlab-oidc-provider",
+    "version": "1.0.1",
+    "tag": "v1.0.1",
+    "published_at": "2023-04-22T11:18:29.624623Z",
+    "downloads": 64042,
+    "verified": false,
+    "source": "https://github.com/terraform-module/terraform-aws-gitlab-oidc-provider",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/tls"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:oidc"
+    ]
+  },
+  {
+    "namespace": "aws-samples",
+    "name": "identity-center",
+    "version": "1.3.5",
+    "tag": "1.3.5",
+    "published_at": "2026-11-04T16:56:02.549606Z",
+    "downloads": 62243,
+    "verified": false,
+    "source": "https://github.com/aws-samples/terraform-aws-identity-center",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 2,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 2
+    },
+    "submodules_count": 4,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "schubergphilis-ep",
+    "name": "mcaf-s3",
+    "version": "4.1.0",
+    "tag": "v4.1.0",
+    "published_at": "2026-11-05T14:04:04.98934Z",
+    "downloads": 61570,
+    "verified": false,
+    "source": "https://github.com/schubergphilis-ep/terraform-aws-mcaf-s3",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 18,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 15,
+      "VPC_SG": 0,
+      "OTHER": 3
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "clouddrove",
+    "name": "security-group",
+    "version": "2.0.3",
+    "tag": "v2.0.3",
+    "published_at": "2026-05-28T13:50:42.786997Z",
+    "downloads": 61158,
+    "verified": false,
+    "source": "https://github.com/clouddrove/terraform-aws-security-group",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 12,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 11,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:security-group"
+    ]
+  },
+  {
+    "namespace": "spirius",
+    "name": "iam-role",
+    "version": "2.1.0",
+    "tag": "v2.1.0",
+    "published_at": "2023-06-30T11:47:41.415295Z",
+    "downloads": 60352,
+    "verified": false,
+    "source": "https://github.com/spirius/terraform-aws-iam-role",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 6,
+    "conteo_servicios": {
+      "IAM": 6,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:iam-role"
+    ]
+  },
+  {
+    "namespace": "dod-iac",
+    "name": "api-gateway-cloudwatch-role",
+    "version": "1.0.0",
+    "tag": "v1.0.0",
+    "published_at": "2020-04-16T17:37:00.740229Z",
+    "downloads": 58645,
+    "verified": false,
+    "source": "https://github.com/dod-iac/terraform-aws-api-gateway-cloudwatch-role",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "SevenPicoForks",
+    "name": "iam-role",
+    "version": "2.0.2",
+    "tag": "2.0.2",
+    "published_at": "2024-11-02T05:51:11.618585Z",
+    "downloads": 57616,
+    "verified": false,
+    "source": "https://github.com/SevenPicoForks/terraform-aws-iam-role",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 5,
+    "conteo_servicios": {
+      "IAM": 5,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:iam-role"
+    ]
+  },
+  {
+    "namespace": "babbel",
+    "name": "s3-bucket-with-cross-region-replication",
+    "version": "2.0.1",
+    "tag": "v2.0.1",
+    "published_at": "2025-03-12T09:10:16.236848Z",
+    "downloads": 56765,
+    "verified": false,
+    "source": "https://github.com/babbel/terraform-aws-s3-bucket-with-cross-region-replication",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 8,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 5,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "aws-samples",
+    "name": "identity-center-users-and-groups",
+    "version": "1.1.5",
+    "tag": "1.1.5",
+    "published_at": "2026-09-02T20:24:40.59351Z",
+    "downloads": 56363,
+    "verified": false,
+    "source": "https://github.com/aws-samples/terraform-aws-identity-center-users-and-groups",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 3
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "cornfeedhobo",
+    "name": "vpc-peering",
+    "version": "2.0.1",
+    "tag": "2.0.1",
+    "published_at": "2020-10-13T18:27:19.775777Z",
+    "downloads": 55898,
+    "verified": false,
+    "source": "https://github.com/cornfeedhobo/terraform-aws-vpc-peering",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 6,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 6,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "aws-samples",
+    "name": "codecommit-s3-backups",
+    "version": "2.3.1",
+    "tag": "2.3.1",
+    "published_at": "2026-11-04T17:49:15.758648Z",
+    "downloads": 55486,
+    "verified": false,
+    "source": "https://github.com/aws-samples/terraform-aws-codecommit-s3-backups",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 16,
+    "conteo_servicios": {
+      "IAM": 6,
+      "S3": 6,
+      "VPC_SG": 0,
+      "OTHER": 4
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "snowplow-devops",
+    "name": "s3-bucket",
+    "version": "0.2.1",
+    "tag": "v0.2.1",
+    "published_at": "2026-09-30T19:26:24.306703Z",
+    "downloads": 53955,
+    "verified": false,
+    "source": "https://github.com/snowplow-devops/terraform-aws-s3-bucket",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 2,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 2,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3",
+      "S3:s3-bucket"
+    ]
+  },
+  {
+    "namespace": "SPHTech-Platform",
+    "name": "s3-cloudfront-static-site",
+    "version": "1.0.2",
+    "tag": "v1.0.2",
+    "published_at": "2026-10-06T02:35:31.204692Z",
+    "downloads": 52924,
+    "verified": false,
+    "source": "https://github.com/SPHTech-Platform/terraform-aws-s3-cloudfront-static-site",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 4,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 1,
+      "VPC_SG": 2,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "bigdatabr",
+    "name": "kubernetes-iamserviceaccount",
+    "version": "1.1.1",
+    "tag": "v1.1.1",
+    "published_at": "2023-12-18T14:36:32.10336Z",
+    "downloads": 52515,
+    "verified": false,
+    "source": "https://github.com/bigdatabr/terraform-aws-kubernetes-iamserviceaccount",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/kubernetes"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 1,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "jakebark",
+    "name": "state",
+    "version": "1.2.2",
+    "tag": "1.2.2",
+    "published_at": "2026-01-31T18:56:08.026566Z",
+    "downloads": 52140,
+    "verified": false,
+    "source": "https://github.com/jakebark/terraform-aws-state",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 8,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 7,
+      "VPC_SG": 0,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "native-cube",
+    "name": "vpc-flow-logs",
+    "version": "2.3.0",
+    "tag": "2.3.0",
+    "published_at": "2025-08-08T08:35:55.570874Z",
+    "downloads": 50328,
+    "verified": false,
+    "source": "https://github.com/native-cube/terraform-aws-vpc-flow-logs",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 4,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 0,
+      "VPC_SG": 1,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "joshuamkite",
+    "name": "ssh-bastion-service",
+    "version": "8.2.0",
+    "tag": "8.2.0",
+    "published_at": "2024-09-19T14:41:20.860565Z",
+    "downloads": 49958,
+    "verified": false,
+    "source": "https://github.com/joshuamkite/terraform-aws-ssh-bastion-service",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/cloudinit"
+    ],
+    "root_resources_total": 21,
+    "conteo_servicios": {
+      "IAM": 8,
+      "S3": 0,
+      "VPC_SG": 6,
+      "OTHER": 7
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "clouddrove",
+    "name": "ses",
+    "version": "1.3.4",
+    "tag": "v1.3.4",
+    "published_at": "2026-03-20T18:46:55.239787Z",
+    "downloads": 49732,
+    "verified": false,
+    "source": "https://github.com/clouddrove/terraform-aws-ses",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 15,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 5,
+      "OTHER": 7
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "clouddrove",
+    "name": "s3",
+    "version": "2.0.1",
+    "tag": "v2.0.1",
+    "published_at": "2026-03-20T18:46:28.305171Z",
+    "downloads": 49719,
+    "verified": false,
+    "source": "https://github.com/clouddrove/terraform-aws-s3",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 21,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 20,
+      "VPC_SG": 1,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "babbel",
+    "name": "iam-openid-connect-provider",
+    "version": "3.0.1",
+    "tag": "v3.0.1",
+    "published_at": "2026-03-10T11:36:39.238273Z",
+    "downloads": 48450,
+    "verified": false,
+    "source": "https://github.com/babbel/terraform-aws-iam-openid-connect-provider",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/http",
+      "hashicorp/tls"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 1,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "trussworks",
+    "name": "iam-cross-acct-dest",
+    "version": "4.0.0",
+    "tag": "v4.0.0",
+    "published_at": "2023-06-08T20:11:21.488619Z",
+    "downloads": 46852,
+    "verified": false,
+    "source": "https://github.com/trussworks/terraform-aws-iam-cross-acct-dest",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 1,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "MagusDevOps",
+    "name": "namespace-service-role",
+    "version": "0.1.11",
+    "tag": "0.1.11",
+    "published_at": "2020-09-14T16:00:31.211064Z",
+    "downloads": 44194,
+    "verified": false,
+    "source": "https://github.com/MagusDevOps/terraform-aws-namespace-service-role",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 6,
+    "conteo_servicios": {
+      "IAM": 6,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "SevenPicoForks",
+    "name": "security-group",
+    "version": "3.0.0",
+    "tag": "3.0.0",
+    "published_at": "2023-02-11T05:41:18.563372Z",
+    "downloads": 43097,
+    "verified": false,
+    "source": "https://github.com/SevenPicoForks/terraform-aws-security-group",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/null",
+      "hashicorp/random"
+    ],
+    "root_resources_total": 6,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 4,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:security-group"
+    ]
+  },
+  {
+    "namespace": "ottertune",
+    "name": "ottertune-iam",
+    "version": "0.0.10",
+    "tag": "v0.0.10",
+    "published_at": "2023-10-05T14:42:23.894305Z",
+    "downloads": 40936,
+    "verified": false,
+    "source": "https://github.com/ottertune/terraform-aws-ottertune-iam",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "snowplow-devops",
+    "name": "s3-loader-kinesis-ec2",
+    "version": "0.6.2",
+    "tag": "v0.6.2",
+    "published_at": "2026-09-30T20:10:03.21884Z",
+    "downloads": 40448,
+    "verified": false,
+    "source": "https://github.com/snowplow-devops/terraform-aws-s3-loader-kinesis-ec2",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 11,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 0,
+      "VPC_SG": 5,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "infrablocks",
+    "name": "vpc-auto-peering-role",
+    "version": "1.1.0-rc.13",
+    "tag": "1.1.0-rc.13",
+    "published_at": "2026-11-18T16:29:36.775904Z",
+    "downloads": 40419,
+    "verified": false,
+    "source": "https://github.com/infrablocks/terraform-aws-vpc-auto-peering-role",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 1,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "uptycslabs",
+    "name": "iam-config",
+    "version": "1.1.4",
+    "tag": "v1.1.4",
+    "published_at": "2025-02-04T07:13:36.693918Z",
+    "downloads": 40111,
+    "verified": false,
+    "source": "https://github.com/uptycslabs/terraform-aws-iam-config",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 0,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 1,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "binbashar",
+    "name": "rds-export-to-s3",
+    "version": "0.4.3",
+    "tag": "v0.4.3",
+    "published_at": "2024-01-24T18:26:51.409929Z",
+    "downloads": 39903,
+    "verified": false,
+    "source": "https://github.com/binbashar/terraform-aws-rds-export-to-s3",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 15,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 11
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "mineiros-io",
+    "name": "iam-role",
+    "version": "0.6.1",
+    "tag": "v0.6.1",
+    "published_at": "2021-08-31T11:49:13.81839Z",
+    "downloads": 39901,
+    "verified": false,
+    "source": "https://github.com/mineiros-io/terraform-aws-iam-role",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 4,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:iam-role"
+    ]
+  },
+  {
+    "namespace": "dealmore",
+    "name": "next-js",
+    "version": "1.0.0-canary.1",
+    "tag": "v1.0.0-canary.1",
+    "published_at": "2021-09-21T10:36:16.134765Z",
+    "downloads": 38979,
+    "verified": false,
+    "source": "https://github.com/milliHQ/terraform-aws-next-js",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/random"
+    ],
+    "root_resources_total": 13,
+    "conteo_servicios": {
+      "IAM": 6,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 7
+    },
+    "submodules_count": 4,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "Cloud-42",
+    "name": "lambda-permission",
+    "version": "2.0.0",
+    "tag": "v2.0",
+    "published_at": "2020-12-08T16:04:12.481629Z",
+    "downloads": 37921,
+    "verified": false,
+    "source": "https://github.com/Cloud-42/terraform-aws-lambda-permission",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "SevenPicoForks",
+    "name": "iam-policy",
+    "version": "2.0.0",
+    "tag": "2.0.0",
+    "published_at": "2023-02-13T04:02:55.802815Z",
+    "downloads": 37391,
+    "verified": false,
+    "source": "https://github.com/SevenPicoForks/terraform-aws-iam-policy",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/http"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 1,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:iam-policy"
+    ]
+  },
+  {
+    "namespace": "c0x12c",
+    "name": "s3",
+    "version": "1.2.0",
+    "tag": "v1.2.0",
+    "published_at": "2026-05-11T06:34:21.295644Z",
+    "downloads": 35659,
+    "verified": false,
+    "source": "https://github.com/c0x12c/terraform-aws-s3",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 13,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 10,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "Young-ook",
+    "name": "vpc",
+    "version": "1.1.0",
+    "tag": "1.1.0",
+    "published_at": "2024-01-31T02:05:16.718482Z",
+    "downloads": 33731,
+    "verified": false,
+    "source": "https://github.com/Young-ook/terraform-aws-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 17,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 13,
+      "OTHER": 4
+    },
+    "submodules_count": 1,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "schubergphilis",
+    "name": "mcaf-vpc-with-ipam",
+    "version": "5.6.2",
+    "tag": "v5.6.2",
+    "published_at": "2026-06-10T11:43:05.931141Z",
+    "downloads": 33261,
+    "verified": false,
+    "source": "https://github.com/schubergphilis/terraform-aws-mcaf-vpc-with-ipam",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 25,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 16,
+      "OTHER": 6
+    },
+    "submodules_count": 1,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "trussworks",
+    "name": "iam-user-group",
+    "version": "3.0.0",
+    "tag": "v3.0.0",
+    "published_at": "2023-06-08T20:48:26.738308Z",
+    "downloads": 33240,
+    "verified": false,
+    "source": "https://github.com/trussworks/terraform-aws-iam-user-group",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 4,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "devops-workflow",
+    "name": "security-group",
+    "version": "2.2.0",
+    "tag": "v2.2.0",
+    "published_at": "2018-10-16T21:04:30.857313Z",
+    "downloads": 32929,
+    "verified": false,
+    "source": "https://github.com/devops-workflow/terraform-aws-security-group",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 11,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 11,
+      "OTHER": 0
+    },
+    "submodules_count": 25,
+    "consultas_origen": [
+      "VPC_SG:vpc",
+      "VPC_SG:security-group"
+    ]
+  },
+  {
+    "namespace": "QuiNovas",
+    "name": "cloudfront",
+    "version": "5.0.1",
+    "tag": "v5.0.1",
+    "published_at": "2023-09-13T11:46:22.743751Z",
+    "downloads": 32761,
+    "verified": false,
+    "source": "https://github.com/QuiNovas/terraform-aws-cloudfront",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/archive",
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 14,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 6,
+      "VPC_SG": 0,
+      "OTHER": 5
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "so1omon563",
+    "name": "s3",
+    "version": "4.2.8",
+    "tag": "v4.2.8",
+    "published_at": "2026-08-12T18:58:24.674627Z",
+    "downloads": 32659,
+    "verified": false,
+    "source": "https://github.com/so1omon563/terraform-aws-s3",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 1,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 14,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "claranet",
+    "name": "vpc-modules",
+    "version": "1.1.1",
+    "tag": "v1.1.1",
+    "published_at": "2021-03-04T10:56:18.141461Z",
+    "downloads": 32483,
+    "verified": false,
+    "source": "https://github.com/claranet/terraform-aws-vpc-modules",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [],
+    "root_resources_total": 0,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 5,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "hashi-strawb",
+    "name": "tfc-dynamic-creds-provider",
+    "version": "0.1.0",
+    "tag": "v0.1.0",
+    "published_at": "2023-01-30T15:23:56.799805Z",
+    "downloads": 31559,
+    "verified": false,
+    "source": "https://github.com/hashi-strawb/terraform-aws-tfc-dynamic-creds-provider",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/tls"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 1,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:oidc"
+    ]
+  },
+  {
+    "namespace": "HENNGE",
+    "name": "security-group",
+    "version": "5.1.1",
+    "tag": "v5.1.1",
+    "published_at": "2024-01-23T02:06:59.903481Z",
+    "downloads": 30527,
+    "verified": false,
+    "source": "https://github.com/HENNGE/terraform-aws-security-group",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 26,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 26,
+      "OTHER": 0
+    },
+    "submodules_count": 58,
+    "consultas_origen": [
+      "VPC_SG:vpc",
+      "VPC_SG:security-group"
+    ]
+  },
+  {
+    "namespace": "HENNGE",
+    "name": "vpc",
+    "version": "5.5.1",
+    "tag": "v5.5.1",
+    "published_at": "2024-01-23T02:07:05.069896Z",
+    "downloads": 30395,
+    "verified": false,
+    "source": "https://github.com/HENNGE/terraform-aws-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 77,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 63,
+      "OTHER": 11
+    },
+    "submodules_count": 1,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "amancevice",
+    "name": "serverless-pypi",
+    "version": "7.8.0",
+    "tag": "v7.8.0",
+    "published_at": "2026-07-16T02:54:02.728316Z",
+    "downloads": 30331,
+    "verified": false,
+    "source": "https://github.com/amancevice/terraform-aws-serverless-pypi",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/archive",
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 17,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 4,
+      "VPC_SG": 0,
+      "OTHER": 11
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "trussworks",
+    "name": "destroy-default-vpc",
+    "version": "3.0.1",
+    "tag": "v3.0.1",
+    "published_at": "2023-02-01T21:08:37.467697Z",
+    "downloads": 30322,
+    "verified": false,
+    "source": "https://github.com/trussworks/terraform-aws-destroy-default-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 6,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 5,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "tedilabs",
+    "name": "network",
+    "version": "1.3.1",
+    "tag": "v1.3.1",
+    "published_at": "2026-10-11T23:48:47.045124Z",
+    "downloads": 30178,
+    "verified": false,
+    "source": "https://github.com/tedilabs/terraform-aws-network",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [],
+    "root_resources_total": 0,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 6,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "lucidsoftware",
+    "name": "lucid-aws-import",
+    "version": "2.0.3",
+    "tag": "v2.0.3",
+    "published_at": "2025-04-27T18:55:46.882973Z",
+    "downloads": 29634,
+    "verified": false,
+    "source": "https://github.com/lucidsoftware/terraform-aws-lucid-aws-import",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [],
+    "root_resources_total": 0,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 3,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "yashkalwani",
+    "name": "iam-role-policy",
+    "version": "1.0.0",
+    "tag": "1.0.0",
+    "published_at": "2025-07-20T18:47:41.479818Z",
+    "downloads": 29032,
+    "verified": false,
+    "source": "https://github.com/yashkalwani/terraform-aws-iam-role-policy",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 5,
+    "conteo_servicios": {
+      "IAM": 5,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "so1omon563",
+    "name": "security-group",
+    "version": "1.1.3",
+    "tag": "v1.1.3",
+    "published_at": "2026-08-12T18:58:27.63747Z",
+    "downloads": 28339,
+    "verified": false,
+    "source": "https://github.com/so1omon563/terraform-aws-security-group",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 1,
+      "OTHER": 0
+    },
+    "submodules_count": 1,
+    "consultas_origen": [
+      "VPC_SG:security-group"
+    ]
+  },
+  {
+    "namespace": "telia-oss",
+    "name": "ssm-agent-policy",
+    "version": "4.0.0",
+    "tag": "v4.0.0",
+    "published_at": "2021-03-26T08:00:10.20042Z",
+    "downloads": 28227,
+    "verified": false,
+    "source": "https://github.com/telia-oss/terraform-aws-ssm-agent-policy",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 2,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "coryair-alteryx",
+    "name": "vpc-flow-logs",
+    "version": "2.0.1",
+    "tag": "v2.0.1",
+    "published_at": "2023-02-08T23:04:02.50778Z",
+    "downloads": 28010,
+    "verified": false,
+    "source": "https://github.com/coryair-alteryx/terraform-aws-vpc-flow-logs",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 5,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 1,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "barundel",
+    "name": "flowlogs",
+    "version": "1.0.3",
+    "tag": "v1.0.3",
+    "published_at": "2020-02-13T10:18:52.168974Z",
+    "downloads": 27920,
+    "verified": false,
+    "source": "https://github.com/barundel/terraform-aws-flowlogs",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/random"
+    ],
+    "root_resources_total": 6,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 0,
+      "VPC_SG": 3,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3",
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "infrahouse",
+    "name": "service-network",
+    "version": "5.0.2",
+    "tag": "5.0.2",
+    "published_at": "2026-08-13T23:18:09.418779Z",
+    "downloads": 27889,
+    "verified": false,
+    "source": "https://github.com/infrahouse/terraform-aws-service-network",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 35,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 13,
+      "VPC_SG": 19,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "chandan-singh",
+    "name": "s3-object-folder",
+    "version": "0.0.4",
+    "tag": "0.0.4",
+    "published_at": "2020-06-14T10:32:24.822508Z",
+    "downloads": 26503,
+    "verified": false,
+    "source": "https://github.com/chandan-singh/terraform-aws-s3-object-folder",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 1,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "ChaserSystems",
+    "name": "discriminat-gwlb",
+    "version": "2.60.0",
+    "tag": "2.60.0",
+    "published_at": "2026-11-11T13:56:40.36162Z",
+    "downloads": 26442,
+    "verified": false,
+    "source": "https://github.com/ChaserSystems/terraform-aws-discriminat-gwlb",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 15,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 0,
+      "VPC_SG": 3,
+      "OTHER": 8
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "hendrixroa",
+    "name": "iam-role-ecs",
+    "version": "1.0.0",
+    "tag": "1.0",
+    "published_at": "2020-01-10T05:53:37.222299Z",
+    "downloads": 26392,
+    "verified": false,
+    "source": "https://github.com/hendrixroa/terraform-aws-iam-role-ecs",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 14,
+    "conteo_servicios": {
+      "IAM": 14,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "HDE",
+    "name": "security-group",
+    "version": "3.18.0",
+    "tag": "v3.18.0",
+    "published_at": "2021-04-07T06:56:52.100717Z",
+    "downloads": 25810,
+    "verified": false,
+    "source": "https://github.com/HDE/terraform-aws-security-group",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 22,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 22,
+      "OTHER": 0
+    },
+    "submodules_count": 48,
+    "consultas_origen": [
+      "VPC_SG:vpc",
+      "VPC_SG:security-group"
+    ]
+  },
+  {
+    "namespace": "genstackio",
+    "name": "website",
+    "version": "0.5.0",
+    "tag": "0.5.0",
+    "published_at": "2025-08-16T20:53:55.443982Z",
+    "downloads": 24914,
+    "verified": false,
+    "source": "https://github.com/genstackio/terraform-aws-website",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 21,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 13,
+      "VPC_SG": 4,
+      "OTHER": 4
+    },
+    "submodules_count": 7,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "sancastlem",
+    "name": "simple-cloudfront-s3-web",
+    "version": "0.0.9",
+    "tag": "v0.0.9",
+    "published_at": "2026-02-09T01:13:00.535529Z",
+    "downloads": 24457,
+    "verified": false,
+    "source": "https://github.com/sancastlem/terraform-aws-simple-cloudfront-s3-web",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 8,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 6,
+      "VPC_SG": 1,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "tmknom",
+    "name": "iam-role",
+    "version": "2.0.0",
+    "tag": "2.0.0",
+    "published_at": "2020-05-03T09:06:05.848186Z",
+    "downloads": 24416,
+    "verified": false,
+    "source": "https://github.com/tmknom/terraform-aws-iam-role",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:iam-role"
+    ]
+  },
+  {
+    "namespace": "QuiNovas",
+    "name": "assume-role-group",
+    "version": "3.0.1",
+    "tag": "v3.0.1",
+    "published_at": "2020-11-20T10:02:47.963649Z",
+    "downloads": 24314,
+    "verified": false,
+    "source": "https://github.com/QuiNovas/terraform-aws-assume-role-group",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "StratusGrid",
+    "name": "s3-bucket-logging",
+    "version": "2.1.6",
+    "tag": "v2.1.6",
+    "published_at": "2024-04-24T13:06:20.341124Z",
+    "downloads": 23746,
+    "verified": false,
+    "source": "https://github.com/StratusGrid/terraform-aws-s3-bucket-logging",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 7,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 7,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "blackbird-cloud",
+    "name": "s3-bucket-policy",
+    "version": "1.0.0",
+    "tag": "v1.0.0",
+    "published_at": "2026-07-24T15:36:31.161529Z",
+    "downloads": 23278,
+    "verified": false,
+    "source": "https://github.com/blackbird-cloud/terraform-aws-s3-bucket-policy",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 1,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "SevenPicoForks",
+    "name": "iam-system-user",
+    "version": "2.0.2",
+    "tag": "2.0.2",
+    "published_at": "2023-10-04T20:11:30.554452Z",
+    "downloads": 22924,
+    "verified": false,
+    "source": "https://github.com/SevenPicoForks/terraform-aws-iam-system-user",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "cloudposse/awsutils"
+    ],
+    "root_resources_total": 4,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "hidrargyro",
+    "name": "easy-vpc",
+    "version": "1.0.0",
+    "tag": "v1.0.0",
+    "published_at": "2020-10-21T22:52:33.343763Z",
+    "downloads": 22899,
+    "verified": false,
+    "source": "https://github.com/hidrargyro/terraform-aws-easy-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 10,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 10,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "dare-global",
+    "name": "s3",
+    "version": "1.9.1",
+    "tag": "1.9.1",
+    "published_at": "2025-10-16T08:21:21.983653Z",
+    "downloads": 22833,
+    "verified": false,
+    "source": "https://github.com/dare-global/terraform-aws-s3",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 15,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 15,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "om2tech",
+    "name": "vpc-peering",
+    "version": "1.0.0",
+    "tag": "1.0.0",
+    "published_at": "2025-10-28T10:47:09.336244Z",
+    "downloads": 22736,
+    "verified": false,
+    "source": "https://github.com/om2tech/terraform-aws-vpc-peering",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 8,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 8,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "plus3it",
+    "name": "tardigrade-service-linked-roles",
+    "version": "1.0.0",
+    "tag": "1.0.0",
+    "published_at": "2022-04-20T14:05:01.895744Z",
+    "downloads": 22414,
+    "verified": false,
+    "source": "https://github.com/plus3it/terraform-aws-tardigrade-service-linked-roles",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 1,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "fmasuhr",
+    "name": "cloudfront-logs",
+    "version": "1.9.0",
+    "tag": "v1.9.0",
+    "published_at": "2026-05-01T22:07:46.75064Z",
+    "downloads": 21886,
+    "verified": false,
+    "source": "https://github.com/fmasuhr/terraform-aws-cloudfront-logs",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/archive",
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 13,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 5,
+      "VPC_SG": 0,
+      "OTHER": 4
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "so1omon563",
+    "name": "vpc",
+    "version": "2.3.6",
+    "tag": "v2.3.6",
+    "published_at": "2026-07-21T18:07:17.30176Z",
+    "downloads": 21675,
+    "verified": false,
+    "source": "https://github.com/so1omon563/terraform-aws-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 14,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 13,
+      "OTHER": 1
+    },
+    "submodules_count": 6,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "schubergphilis",
+    "name": "mcaf-oidc",
+    "version": "0.8.0",
+    "tag": "v0.8.0",
+    "published_at": "2026-06-26T10:10:31.748663Z",
+    "downloads": 21611,
+    "verified": false,
+    "source": "https://github.com/schubergphilis/terraform-aws-mcaf-oidc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "northwood-labs/corefunc",
+      "hashicorp/tls"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 1,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 2,
+    "consultas_origen": [
+      "IAM:iam",
+      "IAM:oidc"
+    ]
+  },
+  {
+    "namespace": "infrablocks",
+    "name": "lambda",
+    "version": "2.0.0-rc.15",
+    "tag": "2.0.0-rc.15",
+    "published_at": "2024-07-27T19:19:27.201648Z",
+    "downloads": 21396,
+    "verified": false,
+    "source": "https://github.com/infrablocks/terraform-aws-lambda",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 7,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 0,
+      "VPC_SG": 3,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "dod-iac",
+    "name": "athena-iam-policy",
+    "version": "1.0.1",
+    "tag": "v1.0.1",
+    "published_at": "2021-10-14T00:01:46.065498Z",
+    "downloads": 21212,
+    "verified": false,
+    "source": "https://github.com/dod-iac/terraform-aws-athena-iam-policy",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 1,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "neovops",
+    "name": "static-website",
+    "version": "2.3.0",
+    "tag": "2.3.0",
+    "published_at": "2023-09-01T08:00:39.299455Z",
+    "downloads": 20705,
+    "verified": false,
+    "source": "https://github.com/neovops/terraform-aws-static-website",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/archive",
+      "hashicorp/aws",
+      "hashicorp/random"
+    ],
+    "root_resources_total": 18,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 5,
+      "VPC_SG": 2,
+      "OTHER": 9
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "StratusGrid",
+    "name": "terraform-state-s3-bucket-centralized-with-roles",
+    "version": "5.2.3",
+    "tag": "v5.2.3",
+    "published_at": "2024-04-24T13:06:24.714288Z",
+    "downloads": 20700,
+    "verified": false,
+    "source": "https://github.com/StratusGrid/terraform-aws-terraform-state-s3-bucket-centralized-with-roles",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 14,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 6,
+      "VPC_SG": 0,
+      "OTHER": 5
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "thetestlabs",
+    "name": "oidc-with-github-actions",
+    "version": "0.1.5",
+    "tag": "v0.1.5",
+    "published_at": "2022-04-01T10:54:44.619373Z",
+    "downloads": 20631,
+    "verified": false,
+    "source": "https://github.com/thetestlabs/terraform-aws-oidc-with-github-actions",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:oidc"
+    ]
+  },
+  {
+    "namespace": "farrukh90",
+    "name": "vpc",
+    "version": "9.0.4",
+    "tag": "9.0.4",
+    "published_at": "2026-08-06T23:23:57.099634Z",
+    "downloads": 20626,
+    "verified": false,
+    "source": "https://github.com/farrukh90/terraform-aws-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 9,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 9,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "appvia",
+    "name": "boundary-stack",
+    "version": "0.2.1",
+    "tag": "v0.2.1",
+    "published_at": "2026-03-19T20:54:33.603328Z",
+    "downloads": 20582,
+    "verified": false,
+    "source": "https://github.com/appvia/terraform-aws-boundary-stack",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 3
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "HDE",
+    "name": "vpc",
+    "version": "3.2.0",
+    "tag": "v3.2.0",
+    "published_at": "2021-07-13T08:35:34.843366Z",
+    "downloads": 20364,
+    "verified": false,
+    "source": "https://github.com/HDE/terraform-aws-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 75,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 61,
+      "OTHER": 11
+    },
+    "submodules_count": 1,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "aws-ia",
+    "name": "vpc_endpoints",
+    "version": "0.1.1",
+    "tag": "0.1.1",
+    "published_at": "2021-10-01T00:58:40.413095Z",
+    "downloads": 20177,
+    "verified": true,
+    "source": "https://github.com/aws-ia/terraform-aws-vpc_endpoints",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 144,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 144,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "tkskwn",
+    "name": "ec2-iam-role",
+    "version": "0.1.1",
+    "tag": "v0.1.1",
+    "published_at": "2017-10-13T21:44:05.365753Z",
+    "downloads": 20080,
+    "verified": false,
+    "source": "https://github.com/tkskwn/terraform-aws-ec2-iam-role",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "JamesWoolfenden",
+    "name": "s3",
+    "version": "0.5.29",
+    "tag": "v0.5.29",
+    "published_at": "2026-05-08T10:48:05.283052Z",
+    "downloads": 19772,
+    "verified": false,
+    "source": "https://github.com/JamesWoolfenden/terraform-aws-s3",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 8,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 8,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "voquis",
+    "name": "s3-encrypted",
+    "version": "0.0.5",
+    "tag": "0.0.5",
+    "published_at": "2023-07-01T13:59:15.800595Z",
+    "downloads": 18939,
+    "verified": false,
+    "source": "https://github.com/voquis/terraform-aws-s3-encrypted",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 6,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 6,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "clouddrove",
+    "name": "sftp",
+    "version": "1.3.4",
+    "tag": "v1.3.4",
+    "published_at": "2026-03-20T18:47:01.043642Z",
+    "downloads": 18641,
+    "verified": false,
+    "source": "https://github.com/clouddrove/terraform-aws-sftp",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 11,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 0,
+      "VPC_SG": 1,
+      "OTHER": 6
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "downneck",
+    "name": "usage-ai-iam",
+    "version": "0.1.8",
+    "tag": "v0.1.8",
+    "published_at": "2023-12-11T19:49:05.596584Z",
+    "downloads": 18631,
+    "verified": false,
+    "source": "https://github.com/downneck/terraform-aws-usage-ai-iam",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "QuiNovas",
+    "name": "user-role",
+    "version": "3.0.6",
+    "tag": "v3.0.6",
+    "published_at": "2022-04-21T20:43:31.281527Z",
+    "downloads": 18488,
+    "verified": false,
+    "source": "https://github.com/QuiNovas/terraform-aws-user-role",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 2,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam"
+    ]
+  },
+  {
+    "namespace": "oozou",
+    "name": "s3",
+    "version": "2.0.1",
+    "tag": "v2.0.1",
+    "published_at": "2023-06-15T08:58:36.989392Z",
+    "downloads": 18447,
+    "verified": false,
+    "source": "https://github.com/oozou/terraform-aws-s3",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/random"
+    ],
+    "root_resources_total": 15,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 12,
+      "VPC_SG": 0,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "plus3it",
+    "name": "tardigrade-vpc-endpoints",
+    "version": "7.0.0",
+    "tag": "7.0.0",
+    "published_at": "2026-01-02T15:40:17.144643Z",
+    "downloads": 17403,
+    "verified": false,
+    "source": "https://github.com/plus3it/terraform-aws-tardigrade-vpc-endpoints",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 3,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "chgangaraju",
+    "name": "cloudfront-s3-website",
+    "version": "1.2.6",
+    "tag": "v1.2.6",
+    "published_at": "2023-06-26T04:10:58.051688Z",
+    "downloads": 16380,
+    "verified": false,
+    "source": "https://github.com/chgangaraju/terraform-aws-cloudfront-s3-website",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 9,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 6,
+      "VPC_SG": 1,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "voquis",
+    "name": "cloudfront-s3-origin-acm",
+    "version": "0.0.5",
+    "tag": "0.0.5",
+    "published_at": "2023-01-05T13:00:51.617096Z",
+    "downloads": 16314,
+    "verified": false,
+    "source": "https://github.com/voquis/terraform-aws-cloudfront-s3-origin-acm",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 1,
+      "VPC_SG": 0,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "clouddrove",
+    "name": "cloudtrail",
+    "version": "1.4.4",
+    "tag": "v1.4.4",
+    "published_at": "2026-08-02T23:51:19.641165Z",
+    "downloads": 16137,
+    "verified": false,
+    "source": "https://github.com/clouddrove/terraform-aws-cloudtrail",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 6,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 3
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "perceptionpoint",
+    "name": "s3-bucket",
+    "version": "0.1.8",
+    "tag": "v0.1.8",
+    "published_at": "2026-11-03T10:27:49.346395Z",
+    "downloads": 16071,
+    "verified": false,
+    "source": "https://github.com/perceptionpoint/terraform-aws-s3-bucket",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 11,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 11,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3",
+      "S3:s3-bucket"
+    ]
+  },
+  {
+    "namespace": "calidae",
+    "name": "default-vpc",
+    "version": "1.0.0",
+    "tag": "v1.0.0",
+    "published_at": "2022-06-16T16:31:54.686919Z",
+    "downloads": 15594,
+    "verified": false,
+    "source": "https://github.com/calidae/terraform-aws-default-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 0,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "egarbi",
+    "name": "es-cluster",
+    "version": "0.2.0",
+    "tag": "0.2.0",
+    "published_at": "2020-12-17T16:26:17.338032Z",
+    "downloads": 15280,
+    "verified": false,
+    "source": "https://github.com/egarbi/terraform-aws-es-cluster",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 7,
+    "conteo_servicios": {
+      "IAM": 1,
+      "S3": 0,
+      "VPC_SG": 5,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "Kalepa",
+    "name": "secure-s3-bucket",
+    "version": "0.3.3",
+    "tag": "v0.3.3",
+    "published_at": "2026-07-14T14:15:24.083887Z",
+    "downloads": 15118,
+    "verified": false,
+    "source": "https://github.com/Kalepa/terraform-aws-secure-s3-bucket",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 10,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 7,
+      "VPC_SG": 0,
+      "OTHER": 3
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "SevenPico",
+    "name": "s3-log-storage",
+    "version": "2.1.3",
+    "tag": "2.1.3",
+    "published_at": "2023-07-25T19:03:39.666382Z",
+    "downloads": 14977,
+    "verified": false,
+    "source": "https://github.com/SevenPico/terraform-aws-s3-log-storage",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/time"
+    ],
+    "root_resources_total": 2,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 1,
+      "VPC_SG": 0,
+      "OTHER": 1
+    },
+    "submodules_count": 7,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "babbel",
+    "name": "vpc",
+    "version": "2.1.0",
+    "tag": "v2.1.0",
+    "published_at": "2026-04-20T11:51:49.088798Z",
+    "downloads": 14844,
+    "verified": false,
+    "source": "https://github.com/babbel/terraform-aws-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 9,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 7,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "JonathanPorta",
+    "name": "s3-static-site",
+    "version": "1.7.1",
+    "tag": "1.7.1",
+    "published_at": "2026-11-10T19:45:50.123731Z",
+    "downloads": 14840,
+    "verified": false,
+    "source": "https://github.com/JonathanPorta/terraform-aws-s3-static-site",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "BetterStackHQ/better-uptime"
+    ],
+    "root_resources_total": 9,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 8,
+      "VPC_SG": 0,
+      "OTHER": 1
+    },
+    "submodules_count": 1,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "infrahouse",
+    "name": "state-manager",
+    "version": "1.5.0",
+    "tag": "1.5.0",
+    "published_at": "2026-05-19T14:30:28.466851Z",
+    "downloads": 14671,
+    "verified": false,
+    "source": "https://github.com/infrahouse/terraform-aws-state-manager",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 5,
+    "conteo_servicios": {
+      "IAM": 5,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "rallyware",
+    "name": "dynamic-subnets",
+    "version": "0.1.3",
+    "tag": "0.1.3",
+    "published_at": "2025-08-01T08:54:08.849562Z",
+    "downloads": 14645,
+    "verified": false,
+    "source": "https://github.com/rallyware/terraform-aws-dynamic-subnets",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/cloudinit",
+      "hashicorp/null",
+      "hashicorp/time"
+    ],
+    "root_resources_total": 23,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 16,
+      "OTHER": 7
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "voquis",
+    "name": "vpc-subnets-internet",
+    "version": "1.0.0",
+    "tag": "1.0.0",
+    "published_at": "2026-11-19T00:23:54.13374Z",
+    "downloads": 13925,
+    "verified": false,
+    "source": "https://github.com/voquis/terraform-aws-vpc-subnets-internet",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 12,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 8,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "corpit-consulting-public",
+    "name": "security-group",
+    "version": "3.1.0",
+    "tag": "v3.1.0",
+    "published_at": "2019-11-13T20:57:18.765275Z",
+    "downloads": 13817,
+    "verified": false,
+    "source": "https://github.com/corpit-consulting-public/terraform-aws-security-group",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 22,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 22,
+      "OTHER": 0
+    },
+    "submodules_count": 37,
+    "consultas_origen": [
+      "VPC_SG:vpc",
+      "VPC_SG:security-group"
+    ]
+  },
+  {
+    "namespace": "emyller",
+    "name": "security-group",
+    "version": "1.2.1",
+    "tag": "1.2.1",
+    "published_at": "2022-02-15T22:50:09.757559Z",
+    "downloads": 13721,
+    "verified": false,
+    "source": "https://github.com/emyller/terraform-aws-security-group",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 5,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 5,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:security-group"
+    ]
+  },
+  {
+    "namespace": "JamesWoolfenden",
+    "name": "vpc",
+    "version": "0.1.120",
+    "tag": "v0.1.120",
+    "published_at": "2026-05-08T10:59:29.066543Z",
+    "downloads": 13636,
+    "verified": false,
+    "source": "https://github.com/JamesWoolfenden/terraform-aws-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 22,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 0,
+      "VPC_SG": 17,
+      "OTHER": 3
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "truemark",
+    "name": "s3-iam",
+    "version": "2.4.2",
+    "tag": "v2.4.2",
+    "published_at": "2024-06-10T16:42:45.053872Z",
+    "downloads": 13582,
+    "verified": false,
+    "source": "https://github.com/truemark/terraform-aws-s3-iam",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 17,
+    "conteo_servicios": {
+      "IAM": 6,
+      "S3": 10,
+      "VPC_SG": 0,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "IAM:iam",
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "toluna-terraform",
+    "name": "vpc",
+    "version": "1.0.12",
+    "tag": "v1.0.12",
+    "published_at": "2023-03-27T08:13:52.934523Z",
+    "downloads": 13544,
+    "verified": false,
+    "source": "https://github.com/toluna-terraform/terraform-aws-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 1,
+      "OTHER": 0
+    },
+    "submodules_count": 3,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "Aplyca",
+    "name": "s3",
+    "version": "0.2.2",
+    "tag": "0.2.2",
+    "published_at": "2022-05-13T01:30:16.349055Z",
+    "downloads": 13481,
+    "verified": false,
+    "source": "https://github.com/Aplyca/terraform-aws-s3",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/template"
+    ],
+    "root_resources_total": 7,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 3,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "clouddrove",
+    "name": "vpc-peering",
+    "version": "1.3.1",
+    "tag": "v1.3.1",
+    "published_at": "2026-03-20T18:47:51.798105Z",
+    "downloads": 13296,
+    "verified": false,
+    "source": "https://github.com/clouddrove/terraform-aws-vpc-peering",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 7,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 7,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "bootlabstech-m",
+    "name": "s3",
+    "version": "1.2.4",
+    "tag": "v1.2.4",
+    "published_at": "2025-08-05T07:12:17.800357Z",
+    "downloads": 12902,
+    "verified": false,
+    "source": "https://github.com/bootlabstech-m/terraform-aws-s3",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 6,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 6,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "rhythmictech",
+    "name": "s3logging-bucket",
+    "version": "6.0.0",
+    "tag": "v6.0.0",
+    "published_at": "2026-08-31T19:31:06.961492Z",
+    "downloads": 12857,
+    "verified": false,
+    "source": "https://github.com/rhythmictech/terraform-aws-s3logging-bucket",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 9,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 9,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "QuiNovas",
+    "name": "cloudtrail",
+    "version": "4.0.2",
+    "tag": "v4.0.2",
+    "published_at": "2024-01-16T04:02:12.625058Z",
+    "downloads": 12701,
+    "verified": false,
+    "source": "https://github.com/QuiNovas/terraform-aws-cloudtrail",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 13,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 5,
+      "VPC_SG": 0,
+      "OTHER": 6
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "tmknom",
+    "name": "s3-access-log",
+    "version": "2.0.0",
+    "tag": "2.0.0",
+    "published_at": "2020-04-30T10:18:51.612131Z",
+    "downloads": 12573,
+    "verified": false,
+    "source": "https://github.com/tmknom/terraform-aws-s3-access-log",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 1,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "SevenPico",
+    "name": "vpc",
+    "version": "3.0.2",
+    "tag": "3.0.2",
+    "published_at": "2025-05-28T18:44:23.361832Z",
+    "downloads": 12541,
+    "verified": false,
+    "source": "https://github.com/SevenPico/terraform-aws-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 8,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 8,
+      "OTHER": 0
+    },
+    "submodules_count": 1,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "atomicobject",
+    "name": "tailscale-router",
+    "version": "1.1.4",
+    "tag": "v1.1.4",
+    "published_at": "2023-07-25T17:44:27.109737Z",
+    "downloads": 12386,
+    "verified": false,
+    "source": "https://github.com/atomicobject/terraform-aws-tailscale-router",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 8,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 4
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "philips-software",
+    "name": "vpc",
+    "version": "2.2.0",
+    "tag": "2.2.0",
+    "published_at": "2021-02-04T14:26:09.995614Z",
+    "downloads": 12274,
+    "verified": false,
+    "source": "https://github.com/philips-software/terraform-aws-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 19,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 18,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "infrahouse",
+    "name": "state-bucket",
+    "version": "3.0.0",
+    "tag": "3.0.0",
+    "published_at": "2026-05-19T21:13:19.712197Z",
+    "downloads": 12110,
+    "verified": false,
+    "source": "https://github.com/infrahouse/terraform-aws-state-bucket",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/random"
+    ],
+    "root_resources_total": 15,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 11,
+      "VPC_SG": 0,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "SPHTech-Platform",
+    "name": "rds-lambda-postgres-provisioner",
+    "version": "0.3.0",
+    "tag": "v0.3.0",
+    "published_at": "2025-11-05T02:50:33.01054Z",
+    "downloads": 11947,
+    "verified": false,
+    "source": "https://github.com/SPHTech-Platform/terraform-aws-rds-lambda-postgres-provisioner",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "rhythmictech",
+    "name": "cloudtrail-logging",
+    "version": "1.3.0",
+    "tag": "v1.3.0",
+    "published_at": "2020-10-05T19:56:15.209524Z",
+    "downloads": 11826,
+    "verified": false,
+    "source": "https://github.com/rhythmictech/terraform-aws-cloudtrail-logging",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 5,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 3
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "dod-iac",
+    "name": "s3-kms-key",
+    "version": "1.0.4",
+    "tag": "v1.0.4",
+    "published_at": "2022-09-14T14:09:36.653374Z",
+    "downloads": 11683,
+    "verified": false,
+    "source": "https://github.com/dod-iac/terraform-aws-s3-kms-key",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 2,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "etleap",
+    "name": "etleap-vpc",
+    "version": "1.21.0",
+    "tag": "v1.21.0",
+    "published_at": "2026-10-30T14:02:57.111868Z",
+    "downloads": 11414,
+    "verified": false,
+    "source": "https://github.com/etleap/terraform-aws-etleap-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/null",
+      "hashicorp/random"
+    ],
+    "root_resources_total": 270,
+    "conteo_servicios": {
+      "IAM": 89,
+      "S3": 6,
+      "VPC_SG": 79,
+      "OTHER": 96
+    },
+    "submodules_count": 4,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "Cloud-42",
+    "name": "vpc",
+    "version": "3.0.0",
+    "tag": "v3.0",
+    "published_at": "2020-02-05T16:03:03.675987Z",
+    "downloads": 11413,
+    "verified": false,
+    "source": "https://github.com/Cloud-42/terraform-aws-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 20,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 2,
+      "VPC_SG": 16,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "appvia",
+    "name": "private-endpoints",
+    "version": "0.3.7",
+    "tag": "v0.3.7",
+    "published_at": "2026-07-16T18:52:28.634089Z",
+    "downloads": 11165,
+    "verified": false,
+    "source": "https://github.com/appvia/terraform-aws-private-endpoints",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 10,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 8,
+      "OTHER": 2
+    },
+    "submodules_count": 1,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "SevenPico",
+    "name": "dynamic-subnets",
+    "version": "3.1.3",
+    "tag": "3.1.3",
+    "published_at": "2025-12-18T18:50:06.301683Z",
+    "downloads": 11150,
+    "verified": false,
+    "source": "https://github.com/SevenPico/terraform-aws-dynamic-subnets",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 30,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 27,
+      "OTHER": 3
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "lablabs",
+    "name": "regional-vpc-peering",
+    "version": "3.1.0",
+    "tag": "v3.1.0",
+    "published_at": "2021-03-11T21:05:00.826669Z",
+    "downloads": 11105,
+    "verified": false,
+    "source": "https://github.com/lablabs/terraform-aws-regional-vpc-peering",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 8,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 8,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "binbashar",
+    "name": "vpc-flowlogs",
+    "version": "1.0.18",
+    "tag": "v1.0.18",
+    "published_at": "2023-07-20T15:50:45.50494Z",
+    "downloads": 11076,
+    "verified": false,
+    "source": "https://github.com/binbashar/terraform-aws-vpc-flowlogs",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 4,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 3,
+      "VPC_SG": 1,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3",
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "infrahouse",
+    "name": "debian-repo",
+    "version": "4.0.0",
+    "tag": "4.0.0",
+    "published_at": "2026-07-03T15:58:17.178107Z",
+    "downloads": 10993,
+    "verified": false,
+    "source": "https://github.com/infrahouse/terraform-aws-debian-repo",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/random"
+    ],
+    "root_resources_total": 20,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 4,
+      "VPC_SG": 3,
+      "OTHER": 10
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "devops-workflow",
+    "name": "s3-buckets",
+    "version": "0.3.0",
+    "tag": "v0.3.0",
+    "published_at": "2018-06-21T16:56:28.991183Z",
+    "downloads": 10710,
+    "verified": false,
+    "source": "https://github.com/devops-workflow/terraform-aws-s3-buckets",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [],
+    "root_resources_total": 0,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "whitebread-cloud",
+    "name": "s3-swagger-ui",
+    "version": "1.0.3",
+    "tag": "v1.0.3",
+    "published_at": "2020-10-23T15:42:50.404988Z",
+    "downloads": 10451,
+    "verified": false,
+    "source": "https://github.com/whitebread-cloud/terraform-aws-s3-swagger-ui",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/external",
+      "hashicorp/null",
+      "hashicorp/template"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "PaloAltoNetworks",
+    "name": "panos-bootstrap",
+    "version": "1.0.0",
+    "tag": "v1.0.0",
+    "published_at": "2020-08-26T13:50:12.909546Z",
+    "downloads": 10442,
+    "verified": false,
+    "source": "https://github.com/PaloAltoNetworks/terraform-aws-panos-bootstrap",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/random"
+    ],
+    "root_resources_total": 8,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 4,
+      "VPC_SG": 0,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "rhythmictech",
+    "name": "backend",
+    "version": "5.0.0",
+    "tag": "v5.0.0",
+    "published_at": "2026-08-31T19:31:10.768021Z",
+    "downloads": 10439,
+    "verified": false,
+    "source": "https://github.com/rhythmictech/terraform-aws-backend",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/local",
+      "hashicorp/random"
+    ],
+    "root_resources_total": 13,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 7,
+      "VPC_SG": 0,
+      "OTHER": 6
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "fivexl",
+    "name": "s3-access-logs-athena-table",
+    "version": "1.0.2",
+    "tag": "1.0.2",
+    "published_at": "2024-02-23T17:14:07.499151Z",
+    "downloads": 10347,
+    "verified": false,
+    "source": "https://github.com/fivexl/terraform-aws-s3-access-logs-athena-table",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 0,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 0
+    },
+    "submodules_count": 1,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "schubergphilis-ep",
+    "name": "mcaf-vpc-with-ipam",
+    "version": "5.6.3",
+    "tag": "v5.6.3",
+    "published_at": "2026-07-07T12:43:37.359801Z",
+    "downloads": 10171,
+    "verified": false,
+    "source": "https://github.com/schubergphilis-ep/terraform-aws-mcaf-vpc-with-ipam",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 25,
+    "conteo_servicios": {
+      "IAM": 3,
+      "S3": 0,
+      "VPC_SG": 16,
+      "OTHER": 6
+    },
+    "submodules_count": 1,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "tx-pts-dai",
+    "name": "mongodbatlas",
+    "version": "2.1.1",
+    "tag": "v2.1.1",
+    "published_at": "2025-05-07T07:07:19.361717Z",
+    "downloads": 10158,
+    "verified": false,
+    "source": "https://github.com/tx-pts-dai/terraform-aws-mongodbatlas",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "mongodb/mongodbatlas"
+    ],
+    "root_resources_total": 13,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 4,
+      "OTHER": 9
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "ansraliant",
+    "name": "s3-state",
+    "version": "2.1.0",
+    "tag": "2.1.0",
+    "published_at": "2026-04-17T03:21:27.79967Z",
+    "downloads": 10148,
+    "verified": false,
+    "source": "https://github.com/ansraliant/terraform-aws-s3-state",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/local"
+    ],
+    "root_resources_total": 7,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 5,
+      "VPC_SG": 0,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "SevenPicoForks",
+    "name": "cloudtrail",
+    "version": "2.0.0",
+    "tag": "2.0.0",
+    "published_at": "2023-02-15T19:50:22.608791Z",
+    "downloads": 10083,
+    "verified": false,
+    "source": "https://github.com/SevenPicoForks/terraform-aws-cloudtrail",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 1,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "S3:s3"
+    ]
+  },
+  {
+    "namespace": "bayupw",
+    "name": "ssm-vpc-endpoint",
+    "version": "1.0.1",
+    "tag": "v1.0.1",
+    "published_at": "2022-06-07T04:30:39.341562Z",
+    "downloads": 10072,
+    "verified": false,
+    "source": "https://github.com/bayupw/terraform-aws-ssm-vpc-endpoint",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/random"
+    ],
+    "root_resources_total": 8,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 7,
+      "OTHER": 1
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "c0x12c",
+    "name": "vpc",
+    "version": "0.5.0",
+    "tag": "v0.5.0",
+    "published_at": "2025-06-12T02:35:56.81899Z",
+    "downloads": 9786,
+    "verified": false,
+    "source": "https://github.com/c0x12c/terraform-aws-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 19,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 0,
+      "VPC_SG": 14,
+      "OTHER": 3
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "geekcell",
+    "name": "security-group",
+    "version": "2.0.0",
+    "tag": "v2.0.0",
+    "published_at": "2023-11-02T09:58:27.983482Z",
+    "downloads": 9677,
+    "verified": false,
+    "source": "https://github.com/geekcell/terraform-aws-security-group",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 3,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:security-group"
+    ]
+  },
+  {
+    "namespace": "cloudposse",
+    "name": "cloudwatch-flow-logs",
+    "version": "0.4.0",
+    "tag": "0.4.0",
+    "published_at": "2020-02-28T17:22:26.939519Z",
+    "downloads": 9642,
+    "verified": false,
+    "source": "https://github.com/cloudposse/terraform-aws-cloudwatch-flow-logs",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 10,
+    "conteo_servicios": {
+      "IAM": 4,
+      "S3": 0,
+      "VPC_SG": 3,
+      "OTHER": 3
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "c0x12c",
+    "name": "security-group",
+    "version": "0.1.58",
+    "tag": "v0.1.58",
+    "published_at": "2025-06-11T20:00:24.208877Z",
+    "downloads": 9380,
+    "verified": false,
+    "source": "https://github.com/c0x12c/terraform-aws-security-group",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 9,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 9,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:security-group"
+    ]
+  },
+  {
+    "namespace": "btower-labz",
+    "name": "btlabz-pri-sn",
+    "version": "1.0.0-000",
+    "tag": "v1.0.0-000",
+    "published_at": "2021-10-10T00:08:06.109351Z",
+    "downloads": 9273,
+    "verified": false,
+    "source": "https://github.com/btower-labz/terraform-aws-btlabz-pri-sn",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 3,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 3,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "lde",
+    "name": "simple-vpc",
+    "version": "1.3.0",
+    "tag": "1.3.0",
+    "published_at": "2026-03-18T15:11:23.690099Z",
+    "downloads": 9208,
+    "verified": false,
+    "source": "https://github.com/lde/terraform-aws-simple-vpc",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 12,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 10,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "clouddrove",
+    "name": "multi-account-peering",
+    "version": "1.1.1",
+    "tag": "v1.1.1",
+    "published_at": "2026-03-20T18:45:42.432332Z",
+    "downloads": 9191,
+    "verified": false,
+    "source": "https://github.com/clouddrove/terraform-aws-multi-account-peering",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws"
+    ],
+    "root_resources_total": 4,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 4,
+      "OTHER": 0
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "DNXLabs",
+    "name": "eks-vpc-cni",
+    "version": "0.1.2",
+    "tag": "0.1.2",
+    "published_at": "2021-06-16T05:41:45.287225Z",
+    "downloads": 9097,
+    "verified": false,
+    "source": "https://github.com/DNXLabs/terraform-aws-eks-vpc-cni",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/helm",
+      "hashicorp/kubernetes"
+    ],
+    "root_resources_total": 4,
+    "conteo_servicios": {
+      "IAM": 2,
+      "S3": 0,
+      "VPC_SG": 0,
+      "OTHER": 2
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  },
+  {
+    "namespace": "perceptionpoint",
+    "name": "vpc-group",
+    "version": "0.6.0",
+    "tag": "v0.6.0",
+    "published_at": "2026-02-26T13:25:39.143892Z",
+    "downloads": 8749,
+    "verified": false,
+    "source": "https://github.com/perceptionpoint/terraform-aws-vpc-group",
+    "deprecation": null,
+    "provider": "aws",
+    "provider_dependencies": [
+      "hashicorp/aws",
+      "hashicorp/local"
+    ],
+    "root_resources_total": 7,
+    "conteo_servicios": {
+      "IAM": 0,
+      "S3": 0,
+      "VPC_SG": 4,
+      "OTHER": 3
+    },
+    "submodules_count": 0,
+    "consultas_origen": [
+      "VPC_SG:vpc"
+    ]
+  }
+]
