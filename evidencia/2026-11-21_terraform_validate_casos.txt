@@ -1,0 +1,29 @@
+=== casos_sembrados/caso_01_iam_politicas_permisos/S ===
+Success! The configuration is valid.
+=== casos_sembrados/caso_01_iam_politicas_permisos/V ===
+Success! The configuration is valid.
+=== casos_sembrados/caso_02_iam_identidades_credenciales/S ===
+Success! The configuration is valid.
+=== casos_sembrados/caso_02_iam_identidades_credenciales/V ===
+Success! The configuration is valid.
+=== casos_sembrados/caso_03_s3_acceso_transporte/S ===
+Success! The configuration is valid.
+=== casos_sembrados/caso_03_s3_acceso_transporte/V ===
+Success! The configuration is valid.
+=== casos_sembrados/caso_04_s3_cifrado_auditoria/S ===
+Success! The configuration is valid.
+=== casos_sembrados/caso_04_s3_cifrado_auditoria/V ===
+Success! The configuration is valid.
+=== casos_sembrados/caso_05_vpc_sg_ipv4_puertos/S ===
+Success! The configuration is valid.
+=== casos_sembrados/caso_05_vpc_sg_ipv4_puertos/V ===
+Success! The configuration is valid.
+=== casos_sembrados/caso_06_vpc_sg_ipv6_default/S ===
+Success! The configuration is valid.
+=== casos_sembrados/caso_06_vpc_sg_ipv6_default/V ===
+Success! The configuration is valid.
+=== casos_sembrados/caso_07_vpc_nacl/S ===
+Success! The configuration is valid.
+=== casos_sembrados/caso_07_vpc_nacl/V ===
+Success! The configuration is valid.
+Resumen: 14/14 variantes validas
