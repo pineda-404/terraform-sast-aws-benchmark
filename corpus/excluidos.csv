@@ -1,81 +1,132 @@
 namespace,nombre,version,descargas,criterio_exclusion,detalle
-terraform-aws-modules,iam,6.11.1,445774201,solo_wrapper,root.resources vacio en Registry
-cloudposse,s3-log-storage,2.1.0,14466268,fuera_de_alcance,no predomina servicio objetivo (OTHER=1 >= S3=1)
-lacework,iam-role,0.4.5,6247419,fuera_de_alcance,no predomina servicio objetivo (OTHER=2 >= IAM=1)
-cloudposse,lb-s3-bucket,0.20.0,5884532,solo_wrapper,root.resources vacio en Registry
-cloudposse,helm-release,0.10.1,2790542,proveedor_no_oficial,"provider_dependencies=['hashicorp/helm', 'hashicorp/kubernetes']"
-cloudposse,iam-policy-document-aggregator,0.8.0,2691779,solo_wrapper,root.resources vacio en Registry
-cloudposse,cloudtrail,0.24.0,1364404,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
-cloudposse,cloudtrail-s3-bucket,0.33.0,985757,solo_wrapper,root.resources vacio en Registry
-babbel,alb-for-vpc-internal-requests,4.0.1,832695,fuera_de_alcance,no predomina servicio objetivo (OTHER=2 >= VPC_SG=2)
-squareops,tfstate,1.1.1,686874,fuera_de_alcance,no predomina servicio objetivo (OTHER=4 >= IAM=4)
-aws-ia,iam-identity-center,1.0.4,408658,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
-reegnz,oidc-provider-data,0.0.4,408440,solo_wrapper,root.resources vacio en Registry
-cloudposse,config-storage,1.0.2,299126,solo_wrapper,root.resources vacio en Registry
-terraform-redhat,rosa-sts,0.0.16,282967,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
-terraform-module,lambda,2.13.1,236523,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
-masterpointio,tailscale,3.0.1,172397,fuera_de_alcance,no predomina servicio objetivo (OTHER=2 >= IAM=2)
-appvia,oidc,3.3.0,156134,solo_wrapper,root.resources vacio en Registry
-sprylab,purple-s3-cloudfront,0.5.0,147679,fuera_de_alcance,no predomina servicio objetivo (OTHER=4 >= IAM=4)
-cookielab,static-site,4.16.0,137480,fuera_de_alcance,no predomina servicio objetivo (OTHER=9 >= IAM=6)
-trussworks,s3-anti-virus,5.0.1,121682,fuera_de_alcance,no predomina servicio objetivo (OTHER=8 >= IAM=4)
-milliHQ,next-js,1.0.0-canary.5,111764,fuera_de_alcance,no predomina servicio objetivo (OTHER=3 >= IAM=2)
-tedilabs,account,0.34.1,109162,solo_wrapper,root.resources vacio en Registry
-cloudposse,vpn-connection,1.10.0,103413,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
-kota65535,s3-deployment,1.8.0,99884,proveedor_no_oficial,"provider_dependencies=['scottwinkler/shell', 'kota65535/temporary', 'kota65535/unarchive', 'pseudo-dynamic/value']"
-babbel,nlb-for-apigateway-vpc-link,2.1.0,93750,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
-cloudposse,ssm-patch-manager,1.0.3,92579,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
-telia-oss,iam,1.0.0,89614,solo_wrapper,root.resources vacio en Registry
-umotif-public,bastion,2.8.0,86926,fuera_de_alcance,no predomina servicio objetivo (OTHER=4 >= IAM=3)
-devops-made-easy,kms-share-multi-accounts,2.0.0,72189,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
-andreswebs,eks-irsa-policy-document,1.0.0,67900,solo_wrapper,root.resources vacio en Registry
-aws-samples,identity-center,1.3.5,62243,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
-aws-samples,identity-center-users-and-groups,1.1.5,56363,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
-bigdatabr,kubernetes-iamserviceaccount,1.1.1,52515,fuera_de_alcance,no predomina servicio objetivo (OTHER=2 >= IAM=1)
-clouddrove,ses,1.3.4,49732,fuera_de_alcance,no predomina servicio objetivo (OTHER=7 >= VPC_SG=5)
-uptycslabs,iam-config,1.1.4,40111,solo_wrapper,root.resources vacio en Registry
-binbashar,rds-export-to-s3,0.4.3,39903,fuera_de_alcance,no predomina servicio objetivo (OTHER=11 >= IAM=4)
-dealmore,next-js,1.0.0-canary.1,38979,fuera_de_alcance,no predomina servicio objetivo (OTHER=7 >= IAM=6)
-Cloud-42,lambda-permission,2.0.0,37921,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
-claranet,vpc-modules,1.1.1,32483,solo_wrapper,root.resources vacio en Registry
-amancevice,serverless-pypi,7.8.0,30331,fuera_de_alcance,no predomina servicio objetivo (OTHER=11 >= S3=4)
-tedilabs,network,1.3.1,30178,solo_wrapper,root.resources vacio en Registry
-lucidsoftware,lucid-aws-import,2.0.3,29634,solo_wrapper,root.resources vacio en Registry
-ChaserSystems,discriminat-gwlb,2.60.0,26442,fuera_de_alcance,no predomina servicio objetivo (OTHER=8 >= IAM=4)
-neovops,static-website,2.3.0,20705,fuera_de_alcance,no predomina servicio objetivo (OTHER=9 >= S3=5)
-appvia,boundary-stack,0.2.1,20582,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
-clouddrove,sftp,1.3.4,18641,fuera_de_alcance,no predomina servicio objetivo (OTHER=6 >= IAM=4)
-voquis,cloudfront-s3-origin-acm,0.0.5,16314,fuera_de_alcance,no predomina servicio objetivo (OTHER=2 >= S3=1)
-clouddrove,cloudtrail,1.4.4,16137,fuera_de_alcance,no predomina servicio objetivo (OTHER=3 >= IAM=3)
-calidae,default-vpc,1.0.0,15594,solo_wrapper,root.resources vacio en Registry
-SevenPico,s3-log-storage,2.1.3,14977,fuera_de_alcance,no predomina servicio objetivo (OTHER=1 >= S3=1)
-QuiNovas,cloudtrail,4.0.2,12701,fuera_de_alcance,no predomina servicio objetivo (OTHER=6 >= S3=5)
-atomicobject,tailscale-router,1.1.4,12386,fuera_de_alcance,no predomina servicio objetivo (OTHER=4 >= IAM=4)
-SPHTech-Platform,rds-lambda-postgres-provisioner,0.3.0,11947,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
-rhythmictech,cloudtrail-logging,1.3.0,11826,fuera_de_alcance,no predomina servicio objetivo (OTHER=3 >= IAM=2)
-dod-iac,s3-kms-key,1.0.4,11683,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
-etleap,etleap-vpc,1.21.0,11414,fuera_de_alcance,no predomina servicio objetivo (OTHER=96 >= IAM=89)
-infrahouse,debian-repo,4.0.0,10993,fuera_de_alcance,no predomina servicio objetivo (OTHER=10 >= S3=4)
-devops-workflow,s3-buckets,0.3.0,10710,solo_wrapper,root.resources vacio en Registry
-whitebread-cloud,s3-swagger-ui,1.0.3,10451,proveedor_no_oficial,"provider_dependencies=['hashicorp/external', 'hashicorp/null', 'hashicorp/template']"
-fivexl,s3-access-logs-athena-table,1.0.2,10347,solo_wrapper,root.resources vacio en Registry
-tx-pts-dai,mongodbatlas,2.1.1,10158,fuera_de_alcance,no predomina servicio objetivo (OTHER=9 >= VPC_SG=4)
-SevenPicoForks,cloudtrail,2.0.0,10083,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
-DNXLabs,eks-vpc-cni,0.1.2,9097,fuera_de_alcance,no predomina servicio objetivo (OTHER=2 >= IAM=2)
-cloudposse,iam-role,1.0.0,19292833,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
-cloudposse,eks-iam-role,2.2.1,7233139,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
-cloudposse,iam-policy,2.0.2,6316448,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
-cloudposse,cloudfront-s3-cdn,2.1.1,3155937,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
-cloudposse,tfstate-backend,1.9.1,2401196,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
-cloudposse,security-group,2.2.0,27073095,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
-cloudposse,vpc,3.0.1,5258142,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
-cloudposse,dynamic-subnets,3.1.1,4059831,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
-cloudposse,vpc-peering-multi-account,2.0.1,1211619,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
-cloudposse,vpc-peering,1.0.1,777169,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
-cloudposse,vpc-flow-logs-s3-bucket,1.4.0,498524,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
-cloudposse,ec2-bastion-server,0.31.2,752487,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
-cloudposse,s3-website,0.18.0,143588,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
-boldlink,iam-role,2.0.0,198217,cuota_publicador,excede maximo de 3 modulos para namespace boldlink
-boldlink,iam-group,1.1.0,197839,cuota_publicador,excede maximo de 3 modulos para namespace boldlink
-boldlink,iam-policy,1.1.0,197270,cuota_publicador,excede maximo de 3 modulos para namespace boldlink
-boldlink,iam-user,1.0.3,196725,cuota_publicador,excede maximo de 3 modulos para namespace boldlink
+terraform-aws-modules,iam,6.11.1,447191011,solo_wrapper,root.resources vacio en Registry
+cloudposse,s3-log-storage,2.1.0,14508318,fuera_de_alcance,no predomina servicio objetivo (OTHER=1 >= S3=1)
+lacework,iam-role,0.4.5,6255651,fuera_de_alcance,no predomina servicio objetivo (OTHER=2 >= IAM=1)
+cloudposse,lb-s3-bucket,0.20.0,5904448,solo_wrapper,root.resources vacio en Registry
+cloudposse,helm-release,0.10.1,2796230,proveedor_no_oficial,"provider_dependencies=['hashicorp/helm', 'hashicorp/kubernetes']"
+cloudposse,iam-policy-document-aggregator,0.8.0,2691895,solo_wrapper,root.resources vacio en Registry
+grem11n,vpc-peering,8.0.0,1516394,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+cloudposse,cloudtrail,0.24.0,1371089,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
+cloudposse,vpc-peering-multi-account,2.0.1,1213199,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+cloudposse,cloudtrail-s3-bucket,0.33.0,990891,solo_wrapper,root.resources vacio en Registry
+aws-ia,vpc,4.9.0,904974,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+babbel,alb-for-vpc-internal-requests,4.0.1,832870,fuera_de_alcance,no predomina servicio objetivo (OTHER=2 >= VPC_SG=2)
+cloudposse,vpc-peering,1.0.1,778950,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+squareops,tfstate,1.1.1,686884,fuera_de_alcance,no predomina servicio objetivo (OTHER=4 >= IAM=4)
+cloudposse,vpc-flow-logs-s3-bucket,1.4.0,500184,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+aws-ia,iam-identity-center,1.0.4,412478,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
+reegnz,oidc-provider-data,0.0.4,408516,solo_wrapper,root.resources vacio en Registry
+cloudposse,config-storage,1.0.2,299649,solo_wrapper,root.resources vacio en Registry
+terraform-redhat,rosa-sts,0.0.16,283030,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
+dcos-terraform,vpc,0.3.0,237438,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+terraform-module,lambda,2.13.1,236594,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
+masterpointio,tailscale,3.0.1,173505,fuera_de_alcance,no predomina servicio objetivo (OTHER=2 >= IAM=2)
+cn-terraform,s3-static-website,1.2.0,163229,fuera_de_alcance,no predomina servicio objetivo (OTHER=10 >= S3=9)
+appvia,oidc,3.3.0,156346,solo_wrapper,root.resources vacio en Registry
+sprylab,purple-s3-cloudfront,0.6.0,147763,fuera_de_alcance,no predomina servicio objetivo (OTHER=4 >= IAM=4)
+cookielab,static-site,4.16.0,137592,fuera_de_alcance,no predomina servicio objetivo (OTHER=11 >= IAM=6)
+telia-oss,vpc,6.1.0,131885,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+trussworks,s3-anti-virus,5.0.1,121770,fuera_de_alcance,no predomina servicio objetivo (OTHER=8 >= IAM=4)
+aws-ia,amazon-vpc-lattice-module,1.1.0,114481,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
+milliHQ,next-js,1.0.0-canary.5,111886,version_prerelease,version=1.0.0-canary.5
+tedilabs,account,0.34.1,109448,solo_wrapper,root.resources vacio en Registry
+cloudposse,vpn-connection,1.10.0,103686,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
+kota65535,s3-deployment,1.8.0,100345,proveedor_no_oficial,"provider_dependencies=['scottwinkler/shell', 'kota65535/temporary', 'kota65535/unarchive', 'pseudo-dynamic/value']"
+babbel,nlb-for-apigateway-vpc-link,2.1.0,93760,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
+infrablocks,encrypted-bucket,3.4.0-rc.2,93489,version_prerelease,version=3.4.0-rc.2
+cloudposse,ssm-patch-manager,1.0.3,92804,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
+telia-oss,iam,1.0.0,89621,solo_wrapper,root.resources vacio en Registry
+umotif-public,bastion,2.8.0,86970,fuera_de_alcance,no predomina servicio objetivo (OTHER=4 >= IAM=3)
+appvia,network,0.7.0,85330,fuera_de_alcance,no predomina servicio objetivo (OTHER=7 >= VPC_SG=4)
+devops-made-easy,kms-share-multi-accounts,2.0.0,72311,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
+andreswebs,eks-irsa-policy-document,1.0.0,68134,solo_wrapper,root.resources vacio en Registry
+QuiNovas,vpc-peering,3.0.4,66404,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+aws-samples,identity-center,1.3.5,63914,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
+aws-samples,identity-center-users-and-groups,1.1.5,57961,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
+cornfeedhobo,vpc-peering,2.0.1,55939,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+SPHTech-Platform,s3-cloudfront-static-site,2.0.1,52941,fuera_de_alcance,no predomina servicio objetivo (OTHER=3 >= S3=1)
+bigdatabr,kubernetes-iamserviceaccount,1.1.1,52523,fuera_de_alcance,no predomina servicio objetivo (OTHER=2 >= IAM=1)
+joshuamkite,ssh-bastion-service,8.2.0,50060,fuera_de_alcance,no predomina servicio objetivo (OTHER=8 >= IAM=8)
+clouddrove,ses,1.3.4,49811,fuera_de_alcance,no predomina servicio objetivo (OTHER=12 >= IAM=3)
+infrablocks,vpc-auto-peering-role,1.1.0-rc.13,40494,version_prerelease,version=1.1.0-rc.13
+uptycslabs,iam-config,1.1.4,40118,solo_wrapper,root.resources vacio en Registry
+binbashar,rds-export-to-s3,0.4.3,39955,fuera_de_alcance,no predomina servicio objetivo (OTHER=11 >= IAM=4)
+dealmore,next-js,1.0.0-canary.1,38987,version_prerelease,version=1.0.0-canary.1
+Cloud-42,lambda-permission,2.0.0,37928,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
+claranet,vpc-modules,1.1.1,32639,solo_wrapper,root.resources vacio en Registry
+tedilabs,network,1.4.0,30502,solo_wrapper,root.resources vacio en Registry
+amancevice,serverless-pypi,7.8.0,30350,fuera_de_alcance,no predomina servicio objetivo (OTHER=12 >= S3=3)
+lucidsoftware,lucid-aws-import,2.0.3,29849,solo_wrapper,root.resources vacio en Registry
+barundel,flowlogs,1.0.3,28045,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 2, 'S3': 0, 'VPC_SG': 0})"
+ChaserSystems,discriminat-gwlb,2.60.0,26640,fuera_de_alcance,no predomina servicio objetivo (OTHER=9 >= IAM=4)
+infrablocks,lambda,2.0.0-rc.15,21410,version_prerelease,version=2.0.0-rc.15
+neovops,static-website,2.3.0,20711,fuera_de_alcance,no predomina servicio objetivo (OTHER=11 >= S3=5)
+appvia,boundary-stack,0.2.1,20658,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
+farrukh90,vpc,9.0.4,20629,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+clouddrove,sftp,1.3.4,18685,fuera_de_alcance,no predomina servicio objetivo (OTHER=7 >= IAM=4)
+chgangaraju,cloudfront-s3-website,1.2.6,16395,fuera_de_alcance,no predomina servicio objetivo (OTHER=5 >= S3=4)
+voquis,cloudfront-s3-origin-acm,0.0.5,16330,fuera_de_alcance,no predomina servicio objetivo (OTHER=2 >= S3=1)
+clouddrove,cloudtrail,1.4.4,16237,fuera_de_alcance,no predomina servicio objetivo (OTHER=3 >= IAM=3)
+calidae,default-vpc,1.0.0,15597,solo_wrapper,root.resources vacio en Registry
+SevenPico,s3-log-storage,2.1.3,14990,fuera_de_alcance,no predomina servicio objetivo (OTHER=1 >= S3=1)
+toluna-terraform,vpc,1.0.12,13548,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
+clouddrove,vpc-peering,1.3.1,13302,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+QuiNovas,cloudtrail,4.0.2,12709,fuera_de_alcance,no predomina servicio objetivo (OTHER=6 >= S3=5)
+atomicobject,tailscale-router,1.1.4,12397,fuera_de_alcance,no predomina servicio objetivo (OTHER=4 >= IAM=4)
+SPHTech-Platform,rds-lambda-postgres-provisioner,0.3.0,11953,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
+rhythmictech,cloudtrail-logging,1.3.0,11843,fuera_de_alcance,no predomina servicio objetivo (OTHER=3 >= IAM=2)
+dod-iac,s3-kms-key,1.0.4,11697,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
+etleap,etleap-vpc,1.21.0,11431,fuera_de_alcance,no predomina servicio objetivo (OTHER=99 >= IAM=89)
+appvia,private-endpoints,0.3.7,11182,fuera_de_alcance,no predomina servicio objetivo (OTHER=6 >= VPC_SG=4)
+lablabs,regional-vpc-peering,3.1.0,11109,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+infrahouse,debian-repo,4.0.0,11001,fuera_de_alcance,no predomina servicio objetivo (OTHER=16 >= IAM=3)
+devops-workflow,s3-buckets,0.3.0,10716,solo_wrapper,root.resources vacio en Registry
+whitebread-cloud,s3-swagger-ui,1.0.3,10457,proveedor_no_oficial,"provider_dependencies=['hashicorp/external', 'hashicorp/null', 'hashicorp/template']"
+fivexl,s3-access-logs-athena-table,1.0.2,10381,solo_wrapper,root.resources vacio en Registry
+tx-pts-dai,mongodbatlas,2.1.1,10171,fuera_de_alcance,no predomina servicio objetivo (OTHER=9 >= VPC_SG=4)
+SevenPicoForks,cloudtrail,2.0.0,10089,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
+btower-labz,btlabz-pri-sn,1.0.0-000,9282,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+lde,simple-vpc,1.3.0,9217,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+clouddrove,multi-account-peering,1.1.1,9198,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+DNXLabs,eks-vpc-cni,0.1.2,9103,fuera_de_alcance,no predomina servicio objetivo (OTHER=2 >= IAM=2)
+dasmeta,vpc,1.1.1,8808,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+perceptionpoint,vpc-group,0.6.0,8775,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+rhythmictech,vpcflowlogs,1.2.0,8751,fuera_de_alcance,no predomina servicio objetivo (OTHER=3 >= IAM=3)
+rallyware,vpc-peering,0.1.3,8666,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+thomasbiddle,vpc-peering,1.0.2,8392,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+btower-labz,btlabz-pub-sn,1.0.0-000,8336,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+sourcefuse,arc-network,3.0.15,8050,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 3, 'S3': 0, 'VPC_SG': 0})"
+infrablocks,vpc-auto-peering,2.1.0-rc.16,7875,version_prerelease,version=2.1.0-rc.16
+scholzj,vpc,3.0.0,7863,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+btower-labz,btlabz-vpc-base,1.0.0-000,7729,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+angelabad,vpc-dns-forwarder,1.2.2,7700,fuera_de_alcance,no predomina servicio objetivo (OTHER=3 >= VPC_SG=2)
+asantos2000,vpc-peering,0.1.0,7592,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+btower-labz,btlabz-nat-base,1.0.0-002,7519,fuera_de_alcance,no predomina servicio objetivo (OTHER=2 >= VPC_SG=1)
+azavea,vpc,7.0.0,7446,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+mineiros-io,vpc,0.7.1,7429,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+npalm,vpc,1.2.0,7414,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+DNXLabs,openvpn,2.0.0,7397,fuera_de_alcance,no predomina servicio objetivo (OTHER=18 >= IAM=10)
+infrablocks,vpc-auto-peering-lambda,2.1.0-rc.14,7384,version_prerelease,version=2.1.0-rc.14
+anugnes,openvpn,1.0.1,7316,fuera_de_alcance,no predomina servicio objetivo (OTHER=4 >= VPC_SG=1)
+anugnes,bastion,1.0.3,7251,fuera_de_alcance,no predomina servicio objetivo (OTHER=1 >= VPC_SG=1)
+kurron,ec2,0.9.0,7245,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
+kurron,vpc,0.9.1,7242,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+ordinaryexperts,vpc-via-cfn,2.0.0,7217,fuera_de_alcance,"sin recursos de IAM, S3 o VPC_SG en raiz"
+plus3it,private-nat-gateway,1.3.1,7208,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+Smartbrood,vpc,0.6.0,7187,sin_recursos_evaluables_rm,"0 recursos de VPC_SG en R_m (conteo_rm={'IAM': 0, 'S3': 0, 'VPC_SG': 0})"
+cloudposse,iam-role,1.0.0,19332801,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
+cloudposse,eks-iam-role,2.2.1,7243471,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
+cloudposse,iam-policy,2.0.2,6333841,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
+cloudposse,cloudfront-s3-cdn,2.1.1,3164144,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
+cloudposse,tfstate-backend,1.9.1,2407927,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
+cloudposse,security-group,2.2.0,27134141,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
+cloudposse,vpc,3.0.1,5268468,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
+cloudposse,dynamic-subnets,3.1.1,4067235,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
+cloudposse,ec2-bastion-server,0.31.2,754080,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
+schubergphilis,mcaf-user,1.0.0,211868,cuota_publicador,excede maximo de 3 modulos para namespace schubergphilis
+cloudposse,s3-website,0.18.0,143602,cuota_publicador,excede maximo de 3 modulos para namespace cloudposse
+boldlink,iam-role,2.0.0,198431,cuota_publicador,excede maximo de 3 modulos para namespace boldlink
+boldlink,iam-group,1.1.0,198053,cuota_publicador,excede maximo de 3 modulos para namespace boldlink
+boldlink,iam-policy,1.1.0,197485,cuota_publicador,excede maximo de 3 modulos para namespace boldlink
+boldlink,iam-user,1.0.3,196940,cuota_publicador,excede maximo de 3 modulos para namespace boldlink
+schubergphilis,mcaf-vpc-with-ipam,5.6.2,33314,cuota_publicador,excede maximo de 3 modulos para namespace schubergphilis

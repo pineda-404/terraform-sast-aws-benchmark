@@ -18,8 +18,9 @@ import hcl2
 
 OBJETIVO_POR_SERVICIO = 15
 CUOTA_DEFAULT = 3
-CUOTA_CONTINGENCIA_IAM = 5
 SERVICIOS = ("IAM", "S3", "VPC_SG")
+
+PRERELEASE_RE = re.compile(r"-(?:rc|beta|alpha|dev|canary|pre)\b", re.I)
 
 
 def servicio_dominante(conteo: dict[str, int]) -> tuple[str | None, str]:
@@ -29,7 +30,6 @@ def servicio_dominante(conteo: dict[str, int]) -> tuple[str | None, str]:
     if total_obj == 0:
         return None, "sin recursos de IAM, S3 o VPC_SG en raiz"
     mejor_svc = max(SERVICIOS, key=lambda s: (objetivos[s], s == "IAM"))
-    # Exigir predominio estricto sobre recursos ajenos al alcance (OTHER)
     if otros >= objetivos[mejor_svc]:
         return None, f"no predomina servicio objetivo (OTHER={otros} >= {mejor_svc}={objetivos[mejor_svc]})"
     return mejor_svc, ""
@@ -40,7 +40,6 @@ def es_hcl1_por_required_version(req_ver: Any) -> bool:
         req_str = " ".join(str(x) for x in req_ver)
     else:
         req_str = str(req_ver or "")
-    # Casos explicitos de restriccion anterior a 0.12 (ej: ~> 0.11, < 0.12, = 0.11.0)
     if re.search(r"(?:~>|=|<|<=)\s*0\.(?:[0-9]|10|11)\b", req_str) and "0.12" not in req_str and "0.13" not in req_str and "1." not in req_str:
         return True
     if re.search(r"<\s*0\.12\b", req_str):
@@ -58,7 +57,6 @@ def verificar_modulo_local(repo_dir: Path) -> tuple[bool, str, int]:
     for tf in tf_files:
         texto = tf.read_text(encoding="utf-8")
         try:
-            # Validar gramatica HCL2 sin depender del serializador para expresiones for complejas
             tree = hcl2.parses(texto)
         except Exception as exc:
             return False, f"error_parseo_hcl2 ({tf.name}: {exc})", 0
@@ -73,8 +71,6 @@ def verificar_modulo_local(repo_dir: Path) -> tuple[bool, str, int]:
                 if isinstance(res_blk, dict):
                     num_resources += len(res_blk)
         except Exception:
-            # Si hcl2.parses valido HCL2 pero el serializador fallo (ej. for_expressions en variables.tf),
-            # contar bloques resource directamente desde BlockRule sin serializar el cuerpo
             for child in getattr(tree.body, "children", []):
                 labels = getattr(child, "labels", None)
                 if labels:
@@ -96,18 +92,23 @@ def verificar_modulo_local(repo_dir: Path) -> tuple[bool, str, int]:
 
 
 def clonar_tag(url: str, tag: str, destino: Path) -> tuple[bool, str]:
+    esperados = {tag, f"v{tag}", tag.lstrip("v")}
     if destino.exists():
-        # Si ya existe y tiene .git valido, obtener HEAD
-        res = subprocess.run(
+        res_head = subprocess.run(
             ["git", "-C", str(destino), "rev-parse", "HEAD"],
             capture_output=True,
             text=True,
         )
-        if res.returncode == 0:
-            return True, res.stdout.strip()
+        res_tags = subprocess.run(
+            ["git", "-C", str(destino), "tag", "--points-at", "HEAD"],
+            capture_output=True,
+            text=True,
+        )
+        tags_actuales = set(res_tags.stdout.split())
+        if res_head.returncode == 0 and (tags_actuales & esperados):
+            return True, res_head.stdout.strip()
         subprocess.run(["rm", "-rf", str(destino)], check=True)
 
-    # Intentar clonar tag directo; si falla sin 'v' o con 'v', probar variante
     tags_a_probar = [tag]
     if tag and not tag.startswith("v"):
         tags_a_probar.append(f"v{tag}")
@@ -138,6 +139,8 @@ def evaluar_candidato_metadata(c: dict[str, Any]) -> tuple[str | None, str, str]
     """Devuelve (servicio_asignado, criterio_exclusion, detalle) basado en metadatos."""
     if c.get("deprecation"):
         return None, "obsoleto", f"deprecation={c['deprecation']}"
+    if PRERELEASE_RE.search(c.get("version", "")):
+        return None, "version_prerelease", f"version={c.get('version')}"
     if c.get("provider") != "aws":
         return None, "proveedor_no_aws", f"provider={c.get('provider')}"
     provs = c.get("provider_dependencies") or []
@@ -148,6 +151,10 @@ def evaluar_candidato_metadata(c: dict[str, Any]) -> tuple[str | None, str, str]
     svc, motivo = servicio_dominante(c.get("conteo_servicios", {}))
     if svc is None:
         return None, "fuera_de_alcance", motivo
+    # Exigir al menos un recurso evaluable del propio servicio dentro de R_m
+    rm_svc = int((c.get("conteo_rm") or {}).get(svc, 0))
+    if rm_svc == 0:
+        return None, "sin_recursos_evaluables_rm", f"0 recursos de {svc} en R_m (conteo_rm={c.get('conteo_rm')})"
     src = c.get("source", "")
     if not src.startswith("https://github.com/"):
         return None, "fuente_no_github", f"source={src}"
@@ -191,7 +198,6 @@ def main() -> int:
         pools[s].sort(key=lambda x: x["downloads"], reverse=True)
         print(f"Pool elegible inicial {s}: {len(pools[s])} modulos")
 
-    # Seleccion equilibrada (round-robin por servicio) respetando cuota max 3 por namespace
     seleccionados: list[dict[str, Any]] = []
     conteo_ns: dict[str, int] = {}
     conteo_svc: dict[str, int] = {s: 0 for s in SERVICIOS}
@@ -227,7 +233,6 @@ def main() -> int:
                 continue
 
             ok_hcl, motivo_hcl, n_res_hcl = verificar_modulo_local(destino)
-
             if not ok_hcl:
                 subprocess.run(["rm", "-rf", str(destino)], check=True)
                 excluidos.append({
@@ -243,6 +248,7 @@ def main() -> int:
             conteo_ns[ns] = conteo_ns.get(ns, 0) + 1
             conteo_svc[svc] += 1
             tipo_verif = "Verified" if c["verified"] else "Comunidad"
+            rm_n = int((c.get("conteo_rm") or {}).get(svc, 0))
             seleccionados.append({
                 "namespace": ns,
                 "nombre": c["name"],
@@ -254,9 +260,10 @@ def main() -> int:
                 "descargas": c["downloads"],
                 "url_fuente": c["source"],
                 "recursos_raiz": n_res_hcl,
-                "motivo_inclusion": f"{tipo_verif}; {c['downloads']} descargas; predominio {svc} ({c['conteo_servicios']})",
+                "recursos_rm_servicio": rm_n,
+                "motivo_inclusion": f"{tipo_verif}; {c['downloads']} descargas; predominio {svc} ({c['conteo_servicios']}; R_m={rm_n})",
             })
-            print(f"  + [{svc} {conteo_svc[svc]}/{OBJETIVO_POR_SERVICIO}] {ns}/{c['name']} v{c['version']} ({clone_info[:8]})")
+            print(f"  + [{svc} {conteo_svc[svc]}/{OBJETIVO_POR_SERVICIO}] {ns}/{c['name']} v{c['version']} (R_m={rm_n}, {clone_info[:8]})")
             return True
         return False
 
@@ -272,7 +279,6 @@ def main() -> int:
     if conteo_svc["IAM"] < 13:
         print(f"ALERTA: IAM obtuvo {conteo_svc['IAM']} (< 13). Se requiere evaluar contingencia Cap4.", file=sys.stderr)
 
-    # Limpiar descargas previas que no quedaron en la seleccion final
     nombres_ok = {f"{m['namespace']}__{m['nombre']}" for m in seleccionados}
     for sub in descargados_dir.iterdir():
         if sub.is_dir() and sub.name not in nombres_ok:
@@ -282,7 +288,8 @@ def main() -> int:
     with mod_csv.open("w", newline="", encoding="utf-8") as fh:
         campos = [
             "namespace", "nombre", "servicio", "version", "tag", "commit",
-            "fecha_extraccion", "descargas", "url_fuente", "recursos_raiz", "motivo_inclusion",
+            "fecha_extraccion", "descargas", "url_fuente", "recursos_raiz",
+            "recursos_rm_servicio", "motivo_inclusion",
         ]
         w = csv.DictWriter(fh, fieldnames=campos)
         w.writeheader()
