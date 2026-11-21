@@ -6,6 +6,12 @@ herramientas:
   trivy:
     imagen: aquasec/trivy:0.76.2
     digest: aquasec/trivy@sha256:8f6bb947dbc528902e11f2f5be52f7b519f6a39d5d148f41166f2040499768fb
+    checks_bundle:
+      repositorio: mirror.gcr.io/aquasec/trivy-checks:2
+      digest: mirror.gcr.io/aquasec/trivy-checks@sha256:b591e9190cff4aa4e385b1a25bccfd9ecf178d3c77fd194e1410b7ce7e1df058
+      version: v2.3.0
+      commit_github: 6ceb33758a0f28d6e37e6cd571dc6816beeadbcc
+      fecha_publicacion: 2026-10-14T08:54:50Z
   kics:
     imagen: checkmarx/kics:v2.2.1
     digest: checkmarx/kics@sha256:49ccc54b6ae7f5d5fc95e96f8f95c18c57f3bba047ab611a03d80792bdff6757

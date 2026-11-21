@@ -1,0 +1,7 @@
+repositorio: BishopFox/iam-vulnerable
+url: https://github.com/BishopFox/iam-vulnerable
+commit: 0f298666f9b7cfa01488b86912afdb211773188a
+fecha_clonado: 2026-11-20
+licencia: MIT
+ruta_rutas_escalamiento: modules/free-resources/privesc-paths/
+cantidad_rutas_privesc: 31

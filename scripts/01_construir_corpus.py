@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Fase 1 (paso 1): consulta la API publica del Terraform Registry y evalua candidatos.
 
-Genera `corpus/candidatos.json` con los metadatos detallados de cada modulo candidato
-para IAM, S3 y VPC/Security Groups, ordenados por descargas acumuladas.
+Genera `corpus/candidatos.json` con los tipos exactos de recurso declarados en raiz,
+conteos por servicio y conteo estricto de recursos evaluables en R_m (Cap4).
 """
 
 from __future__ import annotations
@@ -10,6 +10,7 @@ from __future__ import annotations
 import json
 import sys
 import time
+from collections import Counter
 from pathlib import Path
 from typing import Any
 
@@ -20,11 +21,50 @@ REGISTRY_BASE = "https://registry.terraform.io/v1/modules"
 QUERIES_POR_SERVICIO: dict[str, list[str]] = {
     "IAM": ["iam", "iam-role", "iam-policy", "iam-user", "oidc"],
     "S3": ["s3", "s3-bucket"],
-    "VPC_SG": ["vpc", "security-group"],
+    "VPC_SG": ["security-group", "security-group-rule", "network-acl", "nacl", "vpc"],
+}
+
+TOP_DETALLES_POR_SERVICIO: dict[str, int] = {
+    "IAM": 90,
+    "S3": 90,
+    "VPC_SG": 130,
 }
 
 LIMIT_PER_PAGE = 50
-PAGES_PER_QUERY = 3  # hasta 150 resultados por termino de busqueda
+PAGES_PER_QUERY = 3
+
+# Recursos evaluables en R_m (Cap4 §4.5.2 alineado a Cap2 §2.4)
+VPC_SG_EVALUABLES = {
+    "aws_security_group",
+    "aws_security_group_rule",
+    "aws_default_security_group",
+    "aws_vpc_security_group_ingress_rule",
+    "aws_vpc_security_group_egress_rule",
+    "aws_network_acl",
+    "aws_network_acl_rule",
+    "aws_default_network_acl",
+}
+
+# Recursos de red VPC de soporte (sin colisionar con aws_route53_* ni aws_vpclattice_*)
+VPC_NETWORK_SUPPORT = {
+    "aws_vpc",
+    "aws_default_vpc",
+    "aws_subnet",
+    "aws_route",
+    "aws_route_table",
+    "aws_route_table_association",
+    "aws_default_route_table",
+    "aws_internet_gateway",
+    "aws_nat_gateway",
+    "aws_egress_only_internet_gateway",
+    "aws_vpc_endpoint",
+    "aws_vpc_endpoint_route_table_association",
+    "aws_vpc_endpoint_subnet_association",
+    "aws_vpc_peering_connection",
+    "aws_vpc_peering_connection_accepter",
+    "aws_vpc_peering_connection_options",
+    "aws_flow_log",
+}
 
 
 def get_json(session: requests.Session, url: str, params: dict[str, Any] | None = None) -> dict[str, Any]:
@@ -40,28 +80,24 @@ def get_json(session: requests.Session, url: str, params: dict[str, Any] | None 
     return {}
 
 
-def clasificar_recurso(rtype: str) -> str:
+def clasificar_recurso_servicio(rtype: str) -> str:
     if rtype.startswith("aws_iam_"):
         return "IAM"
-    if rtype.startswith("aws_s3_"):
+    if rtype == "aws_s3_bucket" or rtype.startswith("aws_s3_bucket_"):
         return "S3"
-    if rtype.startswith((
-        "aws_vpc",
-        "aws_security_group",
-        "aws_subnet",
-        "aws_route",
-        "aws_internet_gateway",
-        "aws_nat_gateway",
-        "aws_egress_only_internet_gateway",
-        "aws_network_acl",
-        "aws_default_vpc",
-        "aws_default_security_group",
-        "aws_default_network_acl",
-        "aws_default_route_table",
-        "aws_flow_log",
-    )):
+    if rtype in VPC_SG_EVALUABLES or rtype in VPC_NETWORK_SUPPORT:
         return "VPC_SG"
     return "OTHER"
+
+
+def clasificar_recurso_rm(rtype: str) -> str | None:
+    if rtype.startswith("aws_iam_"):
+        return "IAM"
+    if rtype == "aws_s3_bucket" or rtype.startswith("aws_s3_bucket_"):
+        return "S3"
+    if rtype in VPC_SG_EVALUABLES:
+        return "VPC_SG"
+    return None
 
 
 def main() -> int:
@@ -70,7 +106,7 @@ def main() -> int:
     corpus_dir.mkdir(parents=True, exist_ok=True)
 
     session = requests.Session()
-    session.headers.update({"User-Agent": "terraform-sast-corpus-builder/1.0"})
+    session.headers.update({"User-Agent": "terraform-sast-corpus-builder/1.1"})
 
     candidatos_raw: dict[str, dict[str, Any]] = {}
 
@@ -88,29 +124,26 @@ def main() -> int:
                     break
                 for m in mods:
                     key = f"{m['namespace']}/{m['name']}"
+                    tag_q = f"{servicio_busqueda}:{q}"
                     if key not in candidatos_raw:
                         candidatos_raw[key] = {
                             "namespace": m["namespace"],
                             "name": m["name"],
                             "downloads": int(m.get("downloads", 0)),
                             "verified": bool(m.get("verified", False)),
-                            "consultas_origen": [f"{servicio_busqueda}:{q}"],
+                            "consultas_origen": [tag_q],
                         }
-                    else:
-                        tag_q = f"{servicio_busqueda}:{q}"
-                        if tag_q not in candidatos_raw[key]["consultas_origen"]:
-                            candidatos_raw[key]["consultas_origen"].append(tag_q)
+                    elif tag_q not in candidatos_raw[key]["consultas_origen"]:
+                        candidatos_raw[key]["consultas_origen"].append(tag_q)
 
     ordenados = sorted(candidatos_raw.values(), key=lambda x: x["downloads"], reverse=True)
     print(f"Candidatos unicos recolectados en busqueda: {len(ordenados)}")
 
-    # Seleccionar hasta top 90 por cada servicio de busqueda para evitar que un servicio eclipse a IAM
     seleccion_api: dict[str, dict[str, Any]] = {}
-    for svc in QUERIES_POR_SERVICIO:
+    for svc, limite in TOP_DETALLES_POR_SERVICIO.items():
         del_svc = [c for c in ordenados if any(q.startswith(f"{svc}:") for q in c["consultas_origen"])]
-        for c in del_svc[:90]:
-            k = f"{c['namespace']}/{c['name']}"
-            seleccion_api[k] = c
+        for c in del_svc[:limite]:
+            seleccion_api[f"{c['namespace']}/{c['name']}"] = c
 
     a_consultar = sorted(seleccion_api.values(), key=lambda x: x["downloads"], reverse=True)
     top_n = len(a_consultar)
@@ -128,9 +161,13 @@ def main() -> int:
 
         root_meta = d.get("root") or {}
         resources = [r.get("type", "") for r in root_meta.get("resources", []) if r.get("type")]
-        conteo: dict[str, int] = {"IAM": 0, "S3": 0, "VPC_SG": 0, "OTHER": 0}
+        conteo_svc: dict[str, int] = {"IAM": 0, "S3": 0, "VPC_SG": 0, "OTHER": 0}
+        conteo_rm: dict[str, int] = {"IAM": 0, "S3": 0, "VPC_SG": 0}
         for rt in resources:
-            conteo[clasificar_recurso(rt)] += 1
+            conteo_svc[clasificar_recurso_servicio(rt)] += 1
+            rm_svc = clasificar_recurso_rm(rt)
+            if rm_svc is not None:
+                conteo_rm[rm_svc] += 1
 
         provs = [
             p.get("source") or f"{p.get('namespace')}/{p.get('name')}"
@@ -150,12 +187,14 @@ def main() -> int:
             "provider": d.get("provider", ""),
             "provider_dependencies": provs,
             "root_resources_total": len(resources),
-            "conteo_servicios": conteo,
+            "root_resource_types": dict(sorted(Counter(resources).items())),
+            "conteo_servicios": conteo_svc,
+            "conteo_rm": conteo_rm,
             "submodules_count": len(d.get("submodules", [])),
             "consultas_origen": cand["consultas_origen"],
         })
 
-        if idx % 30 == 0:
+        if idx % 40 == 0:
             print(f"  Consultados {idx}/{top_n} modulos...")
 
     out_path = corpus_dir / "candidatos.json"
