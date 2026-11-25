@@ -1,0 +1,12 @@
+Fecha verificacion: 2026-11-24
+Total controles en catalogo a priori: 30
+Cobertura global: 3/3=14, 2/3=12, 1/3=3, 0/3=1
+Cobertura por herramienta: checkov=28/30, trivy=19/30, kics=22/30
+Desglose por servicio:
+  - IAM: 3/3=4, 2/3=4, 1/3=1, 0/3=1
+  - S3: 3/3=4, 2/3=4, 1/3=2, 0/3=0
+  - VPC_SG: 3/3=6, 2/3=4, 1/3=0, 0/3=0
+J_reglas = |3/3| / |>=1/3| = 14 / 29 = 0.4828 (criterio H1: < 0.50 -> SE CUMPLE)
+C_comp (14 controles): CIS-1.8, CIS-1.9, CIS-1.15, OFF-IAM-PASSROLE, CIS-2.1.4, BP-S3-ACL-PUBLIC, BP-S3-VERSIONING, BP-S3-ACCESS-LOGGING, CIS-5.1, CIS-5.2-SSH, CIS-5.2-RDP, CIS-5.3, CIS-5.4, BP-SG-DESCRIPTION
+Muestra 25% segunda pasada (semilla=20261124, k=8): CIS-1.8, CIS-1.9, CIS-1.22, BP-IAM-WILDCARD-RESOURCE, CIS-5.2-SSH, CIS-5.2-RDP, BP-SG-EGRESS-OPEN, BP-SG-DESCRIPTION
+Errores de verificacion contra codigo fuente: 0

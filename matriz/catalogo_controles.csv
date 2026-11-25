@@ -1,0 +1,31 @@
+id_control,servicio,tipo_recurso_aplicable,origen,referencia,descripcion_control
+CIS-1.8,IAM,aws_iam_account_password_policy,CIS v3.0.0,CIS AWS Foundations v3.0.0 §1.8,Politica de contrasenas IAM requiere longitud minima >= 14 caracteres
+CIS-1.9,IAM,aws_iam_account_password_policy,CIS v3.0.0,CIS AWS Foundations v3.0.0 §1.9,Politica de contrasenas IAM impide reutilizacion de contrasenas (>= 24)
+CIS-1.15,IAM,aws_iam_user | aws_iam_user_policy | aws_iam_user_policy_attachment,CIS v3.0.0,CIS AWS Foundations v3.0.0 §1.15,Usuarios IAM reciben permisos solo mediante grupos y no politicas directas
+CIS-1.16,IAM,aws_iam_policy | data.aws_iam_policy_document | aws_iam_role_policy | aws_iam_group_policy | aws_iam_user_policy,CIS v3.0.0,CIS AWS Foundations v3.0.0 §1.16,No adjuntar politicas IAM que otorguen privilegios administrativos completos (*:*)
+CIS-1.22,IAM,aws_iam_policy | aws_iam_role_policy_attachment | aws_iam_user_policy_attachment | aws_iam_group_policy_attachment,CIS v3.0.0,CIS AWS Foundations v3.0.0 §1.22,Restringir acceso a la politica administrada AWSCloudShellFullAccess
+BP-IAM-WILDCARD-RESOURCE,IAM,aws_iam_policy | data.aws_iam_policy_document | aws_iam_role_policy | aws_iam_group_policy | aws_iam_user_policy,Buena practica,AWS IAM Best Practices,Evitar Resource = "*" en politicas IAM con permisos de escritura o modificacion
+OFF-IAM-PASSROLE,IAM,aws_iam_policy | data.aws_iam_policy_document | aws_iam_role_policy,Literatura,AWS IAM / BishopFox,Restringir iam:PassRole a ARNs de rol especificos evitando comodines
+BP-IAM-PRIVILEGE-ESC-POLICY,IAM,aws_iam_policy | data.aws_iam_policy_document | aws_iam_role_policy,Buena practica,AWS IAM / BishopFox,Evitar permisos de escalamiento sobre versiones de politicas (iam:CreatePolicyVersion / iam:SetDefaultPolicyVersion) sin restriccion
+BP-IAM-PASSWORD-COMPLEXITY,IAM,aws_iam_account_password_policy,Buena practica,AWS IAM Best Practices,Politica de contrasenas exige complejidad (simbolos/numeros/mayusculas/minusculas) y expiracion maxima <= 90 dias
+BP-IAM-TRUST-WILDCARD,IAM,aws_iam_role | data.aws_iam_policy_document,Buena practica,AWS IAM Best Practices,Politica de confianza assume_role_policy no debe permitir Principal AWS = "*"
+CIS-2.1.1,S3,aws_s3_bucket | aws_s3_bucket_policy | data.aws_iam_policy_document,CIS v3.0.0,CIS AWS Foundations v3.0.0 §2.1.1,Politica de bucket S3 deniega explicitamente solicitudes HTTP (aws:SecureTransport = false)
+CIS-2.1.2,S3,aws_s3_bucket | aws_s3_bucket_versioning,CIS v3.0.0,CIS AWS Foundations v3.0.0 §2.1.2,MFA Delete habilitado en buckets S3 con versionado
+CIS-2.1.4,S3,aws_s3_bucket | aws_s3_bucket_public_access_block,CIS v3.0.0,CIS AWS Foundations v3.0.0 §2.1.4,Block Public Access configurado en el bucket S3 (los 4 atributos en true)
+BP-S3-ACL-PUBLIC,S3,aws_s3_bucket | aws_s3_bucket_acl,Buena practica,AWS S3 Best Practices,Bucket S3 no debe tener ACL publica (public-read / public-read-write / authenticated-read)
+BP-S3-PUBLIC-POLICY,S3,aws_s3_bucket | aws_s3_bucket_policy,Buena practica,AWS S3 Best Practices,Politica de bucket S3 no debe otorgar acceso Allow a Principal = "*"
+BP-S3-OWNERSHIP,S3,aws_s3_bucket | aws_s3_bucket_ownership_controls,Buena practica,AWS S3 Best Practices,Control de propiedad de objetos S3 configurado con BucketOwnerEnforced (ACLs deshabilitadas)
+BP-S3-KMS,S3,aws_s3_bucket | aws_s3_bucket_server_side_encryption_configuration,Buena practica,AWS S3 / Cap4,Cifrado de bucket S3 mediante clave KMS administrada por el cliente (SSE-KMS)
+BP-S3-VERSIONING,S3,aws_s3_bucket | aws_s3_bucket_versioning,Buena practica,AWS S3 Best Practices,Versionado habilitado en buckets S3
+BP-S3-ACCESS-LOGGING,S3,aws_s3_bucket | aws_s3_bucket_logging,Buena practica,AWS S3 Best Practices,Registro de acceso al servidor (access logging) habilitado en buckets S3
+BP-S3-REPLICATION,S3,aws_s3_bucket | aws_s3_bucket_replication_configuration,Buena practica,AWS S3 Best Practices,Replicacion entre regiones configurada para resiliencia de buckets S3
+CIS-5.1,VPC_SG,aws_network_acl | aws_network_acl_rule,CIS v3.0.0,CIS AWS Foundations v3.0.0 §5.1,Ninguna NACL permite ingreso desde 0.0.0.0/0 a puertos administrativos (SSH/22 o RDP/3389)
+CIS-5.2-SSH,VPC_SG,aws_security_group | aws_security_group_rule | aws_vpc_security_group_ingress_rule,CIS v3.0.0,CIS AWS Foundations v3.0.0 §5.2,Ningun Security Group permite ingreso desde 0.0.0.0/0 al puerto SSH (22)
+CIS-5.2-RDP,VPC_SG,aws_security_group | aws_security_group_rule | aws_vpc_security_group_ingress_rule,CIS v3.0.0,CIS AWS Foundations v3.0.0 §5.2,Ningun Security Group permite ingreso desde 0.0.0.0/0 al puerto RDP (3389)
+CIS-5.3,VPC_SG,aws_security_group | aws_security_group_rule | aws_vpc_security_group_ingress_rule,CIS v3.0.0,CIS AWS Foundations v3.0.0 §5.3,Ningun Security Group permite ingreso IPv6 desde ::/0 a puertos administrativos (22/3389)
+CIS-5.4,VPC_SG,aws_default_security_group,CIS v3.0.0,CIS AWS Foundations v3.0.0 §5.4,El Security Group predeterminado de cada VPC restringe todo trafico de ingreso y egreso
+BP-SG-ALL-PROTOCOLS,VPC_SG,aws_security_group | aws_security_group_rule | aws_vpc_security_group_ingress_rule,Buena practica,AWS VPC / Cap4,Security Group no permite ingreso con todos los protocolos (protocol = "-1") desde internet
+BP-SG-EGRESS-OPEN,VPC_SG,aws_security_group | aws_security_group_rule | aws_vpc_security_group_egress_rule,Buena practica,AWS VPC Best Practices,Security Group restringe reglas de egreso evitando salida abierta a 0.0.0.0/0
+BP-SG-DESCRIPTION,VPC_SG,aws_security_group | aws_security_group_rule,Buena practica,AWS VPC Best Practices,Security Group y sus reglas incluyen atributo description para auditoria
+BP-SG-HTTP-OPEN,VPC_SG,aws_security_group | aws_security_group_rule | aws_vpc_security_group_ingress_rule,Buena practica,AWS VPC Best Practices,Security Group no expone puerto HTTP (80) en texto plano a 0.0.0.0/0
+BP-VPC-NACL-ALL-INGRESS,VPC_SG,aws_network_acl | aws_network_acl_rule,Buena practica,AWS VPC Best Practices,NACL no permite ingreso irrestricto de todos los puertos/protocolos desde 0.0.0.0/0
