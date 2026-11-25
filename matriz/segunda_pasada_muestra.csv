@@ -1,0 +1,9 @@
+id_control,servicio,regla_checkov_p1,regla_trivy_p1,regla_kics_p1,cobertura_p1,cobertura_p2,coincide,observaciones_p2
+CIS-1.8,IAM,CKV_AWS_10,AVD-AWS-0063,1bc1c685-e593-450e-88fb-19db4c82aa1d,3/3,,,semilla=20261124; pendiente revision independiente
+CIS-1.9,IAM,CKV_AWS_13,AVD-AWS-0056,89806cdc-9c2e-4bd1-a0dc-53f339bcfb2a,3/3,,,semilla=20261124; pendiente revision independiente
+CIS-1.22,IAM,,,,0/3,,,semilla=20261124; pendiente revision independiente
+BP-IAM-WILDCARD-RESOURCE,IAM,CKV_AWS_355,,,1/3,,,semilla=20261124; pendiente revision independiente
+CIS-5.2-SSH,VPC_SG,CKV_AWS_24,AVD-AWS-0107,65905cec-d691-4320-b320-2000436cb696,3/3,,,semilla=20261124; pendiente revision independiente
+CIS-5.2-RDP,VPC_SG,CKV_AWS_25,AVD-AWS-0107,151187cb-0efc-481c-babd-ad24e3c9bc22,3/3,,,semilla=20261124; pendiente revision independiente
+BP-SG-EGRESS-OPEN,VPC_SG,CKV_AWS_382,AVD-AWS-0104,,2/3,,,semilla=20261124; pendiente revision independiente
+BP-SG-DESCRIPTION,VPC_SG,CKV_AWS_23,AVD-AWS-0099,cb3f5ed6-0d18-40de-a93d-b3538db31e8c,3/3,,,semilla=20261124; pendiente revision independiente
