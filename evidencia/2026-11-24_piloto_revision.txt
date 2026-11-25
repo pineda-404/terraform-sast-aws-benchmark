@@ -1,0 +1,73 @@
+Normalizacion modo=piloto (2026-11-24)
+Objetivos procesados: 7
+Conteo de alertas por herramienta (cuadre crudo = atribuida + fuera_catalogo + excluida_sin_recurso_rm):
+  - checkov: crudas=  58 | atribuidas=  29 | fuera_catalogo=  25 | excluidas_sin_rm=   4
+  - trivy  : crudas=  17 | atribuidas=  12 | fuera_catalogo=   3 | excluidas_sin_rm=   2
+  - kics   : crudas= 267 | atribuidas=  22 | fuera_catalogo= 221 | excluidas_sin_rm=  24
+Unidades (r, c) en U (corpus, C_comp 3/3): 44 (acuerdos 0/0/0: 40)
+Archivos escritos: /home/pineda/TuT/trabajo-trabajo/Cursos_Uni/26-2/Tesis_1/Experimentos/resultados/normalizados/piloto_alertas.csv y /home/pineda/TuT/trabajo-trabajo/Cursos_Uni/26-2/Tesis_1/Experimentos/resultados/normalizados/piloto_unidades.csv
+
+--- Muestra de alertas atribuidas para revision manual (Fase 4) ---
+  [kics   ] corpus__clouddrove__vpc | main.tf:246 | aws_s3_bucket.flow_log | f861041c-8c9f-4156-acfc-5e6e524f5884 -> BP-S3-ACCESS-LOGGING
+  [kics   ] corpus__clouddrove__vpc | main.tf:310 | aws_s3_bucket_policy.block-http | 4bc4dd4c-7d8d-405e-a0fb-57fa4c31b4d9 -> CIS-2.1.1
+  [kics   ] corpus__clouddrove__vpc | main.tf:246 | aws_s3_bucket.flow_log | 568a4d22-3517-44a6-a7ad-6a7eed88722c -> BP-S3-VERSIONING
+  [checkov] corpus__terraform-aws-modules__s3-bucket | main.tf:77 | aws_s3_bucket.this | CKV_AWS_144 -> BP-S3-REPLICATION
+  [checkov] corpus__terraform-aws-modules__s3-bucket | main.tf:77 | aws_s3_bucket.this | CKV_AWS_21 -> BP-S3-VERSIONING
+  [checkov] corpus__terraform-aws-modules__s3-bucket | main.tf:77 | aws_s3_bucket.this | CKV_AWS_145 -> BP-S3-KMS
+  [trivy  ] corpus__terraform-aws-modules__s3-bucket | main.tf:77 | aws_s3_bucket.this | AVD-AWS-0089 -> BP-S3-ACCESS-LOGGING
+  [trivy  ] corpus__terraform-aws-modules__s3-bucket | main.tf:77 | aws_s3_bucket.this | AVD-AWS-0090 -> BP-S3-VERSIONING
+  [trivy  ] corpus__terraform-aws-modules__s3-bucket | main.tf:77 | aws_s3_bucket.this | AVD-AWS-0132 -> BP-S3-KMS
+  [kics   ] corpus__terraform-aws-modules__s3-bucket | main.tf:77 | aws_s3_bucket.this | f861041c-8c9f-4156-acfc-5e6e524f5884 -> BP-S3-ACCESS-LOGGING
+  [kics   ] corpus__terraform-aws-modules__s3-bucket | main.tf:744 | aws_s3_bucket_policy.this | 4bc4dd4c-7d8d-405e-a0fb-57fa4c31b4d9 -> CIS-2.1.1
+  [kics   ] corpus__terraform-aws-modules__s3-bucket | main.tf:77 | aws_s3_bucket.this | 568a4d22-3517-44a6-a7ad-6a7eed88722c -> BP-S3-VERSIONING
+  [checkov] iam_vulnerable__piloto_4rutas | privesc1-CreateNewPolicyVersion.tf:1 | aws_iam_policy.privesc1-CreateNewPolicyVersion | CKV_AWS_286 -> BP-IAM-PRIVILEGE-ESC-POLICY
+  [checkov] iam_vulnerable__piloto_4rutas | privesc1-CreateNewPolicyVersion.tf:1 | aws_iam_policy.privesc1-CreateNewPolicyVersion | CKV_AWS_355 -> BP-IAM-WILDCARD-RESOURCE
+  [checkov] iam_vulnerable__piloto_4rutas | privesc1-CreateNewPolicyVersion.tf:48 | aws_iam_user_policy_attachment.privesc1-CreateNewPolicyVersion-user-attach-policy | CKV_AWS_40 -> CIS-1.15
+  [checkov] iam_vulnerable__piloto_4rutas | privesc12-PutRolePolicy.tf:1 | aws_iam_policy.privesc12-PutRolePolicy | CKV_AWS_355 -> BP-IAM-WILDCARD-RESOURCE
+  [checkov] iam_vulnerable__piloto_4rutas | privesc12-PutRolePolicy.tf:47 | aws_iam_user_policy_attachment.privesc12-PutRolePolicy-user-attach-policy | CKV_AWS_40 -> CIS-1.15
+  [checkov] iam_vulnerable__piloto_4rutas | privesc15-PassExistingRoleToNewLambdaThenInvoke.tf:1 | aws_iam_policy.privesc15-PassExistingRoleToNewLambdaThenInvoke | CKV_AWS_286 -> BP-IAM-PRIVILEGE-ESC-POLICY
+  [checkov] iam_vulnerable__piloto_4rutas | privesc15-PassExistingRoleToNewLambdaThenInvoke.tf:1 | aws_iam_policy.privesc15-PassExistingRoleToNewLambdaThenInvoke | CKV_AWS_355 -> BP-IAM-WILDCARD-RESOURCE
+  [checkov] iam_vulnerable__piloto_4rutas | privesc15-PassExistingRoleToNewLambdaThenInvoke.tf:1 | aws_iam_policy.privesc15-PassExistingRoleToNewLambdaThenInvoke | CKV_AWS_290 -> BP-IAM-WILDCARD-RESOURCE
+  [checkov] iam_vulnerable__piloto_4rutas | privesc15-PassExistingRoleToNewLambdaThenInvoke.tf:51 | aws_iam_user_policy_attachment.privesc15-PassExistingRoleToNewLambdaThenInvoke-user-attach-policy | CKV_AWS_40 -> CIS-1.15
+  [checkov] iam_vulnerable__piloto_4rutas | privesc7-AttachUserPolicy.tf:1 | aws_iam_policy.privesc7-AttachUserPolicy | CKV_AWS_286 -> BP-IAM-PRIVILEGE-ESC-POLICY
+  [checkov] iam_vulnerable__piloto_4rutas | privesc7-AttachUserPolicy.tf:1 | aws_iam_policy.privesc7-AttachUserPolicy | CKV_AWS_355 -> BP-IAM-WILDCARD-RESOURCE
+  [checkov] iam_vulnerable__piloto_4rutas | privesc7-AttachUserPolicy.tf:47 | aws_iam_user_policy_attachment.privesc7-AttachUserPolicy-user-attach-policy | CKV_AWS_40 -> CIS-1.15
+  [checkov] iam_vulnerable__piloto_4rutas | service-linked-role-common.tf:3 | aws_iam_policy.privesc-high-priv-service-policy | CKV_AWS_62 -> CIS-1.16
+  [checkov] iam_vulnerable__piloto_4rutas | service-linked-role-common.tf:3 | aws_iam_policy.privesc-high-priv-service-policy | CKV_AWS_286 -> BP-IAM-PRIVILEGE-ESC-POLICY
+  [checkov] iam_vulnerable__piloto_4rutas | service-linked-role-common.tf:3 | aws_iam_policy.privesc-high-priv-service-policy | CKV_AWS_355 -> BP-IAM-WILDCARD-RESOURCE
+  [checkov] iam_vulnerable__piloto_4rutas | service-linked-role-common.tf:3 | aws_iam_policy.privesc-high-priv-service-policy | CKV_AWS_290 -> BP-IAM-WILDCARD-RESOURCE
+  [checkov] iam_vulnerable__piloto_4rutas | sre.tf:1 | aws_iam_policy.privesc-sre-admin-policy | CKV_AWS_286 -> BP-IAM-PRIVILEGE-ESC-POLICY
+  [checkov] iam_vulnerable__piloto_4rutas | sre.tf:1 | aws_iam_policy.privesc-sre-admin-policy | CKV_AWS_355 -> BP-IAM-WILDCARD-RESOURCE
+  [checkov] iam_vulnerable__piloto_4rutas | sre.tf:1 | aws_iam_policy.privesc-sre-admin-policy | CKV_AWS_290 -> BP-IAM-WILDCARD-RESOURCE
+  [trivy  ] iam_vulnerable__piloto_4rutas | privesc1-CreateNewPolicyVersion.tf:38 | aws_iam_user.privesc1-CreateNewPolicyVersion-user | AVD-AWS-0143 -> CIS-1.15
+  [trivy  ] iam_vulnerable__piloto_4rutas | privesc12-PutRolePolicy.tf:37 | aws_iam_user.privesc12-PutRolePolicy-user | AVD-AWS-0143 -> CIS-1.15
+  [trivy  ] iam_vulnerable__piloto_4rutas | privesc15-PassExistingRoleToNewLambdaThenInvoke.tf:41 | aws_iam_user.privesc15-PassExistingRoleToNewLambdaThenInvoke-user | AVD-AWS-0143 -> CIS-1.15
+  [trivy  ] iam_vulnerable__piloto_4rutas | privesc15-PassExistingRoleToNewLambdaThenInvoke.tf:8 | aws_iam_policy.privesc15-PassExistingRoleToNewLambdaThenInvoke | AVD-AWS-0342 -> OFF-IAM-PASSROLE
+  [trivy  ] iam_vulnerable__piloto_4rutas | privesc7-AttachUserPolicy.tf:37 | aws_iam_user.privesc7-AttachUserPolicy-user | AVD-AWS-0143 -> CIS-1.15
+  [kics   ] iam_vulnerable__piloto_4rutas | service-linked-role-common.tf:10 | aws_iam_policy.privesc-high-priv-service-policy | 575a2155-6af1-4026-b1af-d5bc8fe2a904 -> CIS-1.16
+  [kics   ] iam_vulnerable__piloto_4rutas | privesc15-PassExistingRoleToNewLambdaThenInvoke.tf:52 | aws_iam_user_policy_attachment.privesc15-PassExistingRoleToNewLambdaThenInvoke-user-attach-policy | b4378389-a9aa-44ee-91e7-ef183f11079e -> CIS-1.15
+  [kics   ] iam_vulnerable__piloto_4rutas | privesc1-CreateNewPolicyVersion.tf:49 | aws_iam_user_policy_attachment.privesc1-CreateNewPolicyVersion-user-attach-policy | b4378389-a9aa-44ee-91e7-ef183f11079e -> CIS-1.15
+  [kics   ] iam_vulnerable__piloto_4rutas | privesc7-AttachUserPolicy.tf:48 | aws_iam_user_policy_attachment.privesc7-AttachUserPolicy-user-attach-policy | b4378389-a9aa-44ee-91e7-ef183f11079e -> CIS-1.15
+  [kics   ] iam_vulnerable__piloto_4rutas | privesc12-PutRolePolicy.tf:48 | aws_iam_user_policy_attachment.privesc12-PutRolePolicy-user-attach-policy | b4378389-a9aa-44ee-91e7-ef183f11079e -> CIS-1.15
+  [kics   ] iam_vulnerable__piloto_4rutas | sre.tf:8 | aws_iam_policy.privesc-sre-admin-policy | 2f37c4a3-58b9-4afe-8a87-d7f1d2286f84 -> CIS-1.16
+  [kics   ] iam_vulnerable__piloto_4rutas | service-linked-role-common.tf:10 | aws_iam_policy.privesc-high-priv-service-policy | 2f37c4a3-58b9-4afe-8a87-d7f1d2286f84 -> CIS-1.16
+  [kics   ] iam_vulnerable__piloto_4rutas | privesc1-CreateNewPolicyVersion.tf:38 | aws_iam_user.privesc1-CreateNewPolicyVersion-user | 1743f5f1-0bb0-4934-acef-c80baa5dadfa -> BP-IAM-PRIVILEGE-ESC-POLICY
+  [checkov] sembrado__caso_05_vpc_sg_ipv4_puertos__V | main.tf:22 | aws_security_group_rule.ssh_ipv4 | CKV_AWS_24 -> CIS-5.2-SSH|CIS-5.3
+  [checkov] sembrado__caso_05_vpc_sg_ipv4_puertos__V | main.tf:33 | aws_security_group_rule.rdp_ipv4 | CKV_AWS_25 -> CIS-5.2-RDP
+  [checkov] sembrado__caso_05_vpc_sg_ipv4_puertos__V | main.tf:44 | aws_security_group_rule.todos_protocolos | CKV_AWS_24 -> CIS-5.2-SSH|CIS-5.3
+  [checkov] sembrado__caso_05_vpc_sg_ipv4_puertos__V | main.tf:44 | aws_security_group_rule.todos_protocolos | CKV_AWS_25 -> CIS-5.2-RDP
+  [checkov] sembrado__caso_05_vpc_sg_ipv4_puertos__V | main.tf:44 | aws_security_group_rule.todos_protocolos | CKV_AWS_260 -> BP-SG-HTTP-OPEN
+  [checkov] sembrado__caso_05_vpc_sg_ipv4_puertos__V | main.tf:44 | aws_security_group_rule.todos_protocolos | CKV_AWS_277 -> BP-SG-ALL-PROTOCOLS
+  [checkov] sembrado__caso_05_vpc_sg_ipv4_puertos__V | main.tf:55 | aws_security_group_rule.salida | CKV_AWS_382 -> BP-SG-EGRESS-OPEN
+  [trivy  ] sembrado__caso_05_vpc_sg_ipv4_puertos__V | main.tf:61 | aws_security_group_rule.salida | AVD-AWS-0104 -> BP-SG-EGRESS-OPEN
+  [trivy  ] sembrado__caso_05_vpc_sg_ipv4_puertos__V | main.tf:39 | aws_security_group_rule.rdp_ipv4 | AVD-AWS-0107 -> CIS-5.2-SSH|CIS-5.2-RDP|CIS-5.3
+  [trivy  ] sembrado__caso_05_vpc_sg_ipv4_puertos__V | main.tf:28 | aws_security_group_rule.ssh_ipv4 | AVD-AWS-0107 -> CIS-5.2-SSH|CIS-5.2-RDP|CIS-5.3
+  [trivy  ] sembrado__caso_05_vpc_sg_ipv4_puertos__V | main.tf:50 | aws_security_group_rule.todos_protocolos | AVD-AWS-0107 -> CIS-5.2-SSH|CIS-5.2-RDP|CIS-5.3
+  [kics   ] sembrado__caso_05_vpc_sg_ipv4_puertos__V | main.tf:33 | aws_security_group_rule.rdp_ipv4 | 151187cb-0efc-481c-babd-ad24e3c9bc22 -> CIS-5.2-RDP
+  [kics   ] sembrado__caso_05_vpc_sg_ipv4_puertos__V | main.tf:44 | aws_security_group_rule.todos_protocolos | 151187cb-0efc-481c-babd-ad24e3c9bc22 -> CIS-5.2-RDP
+  [kics   ] sembrado__caso_05_vpc_sg_ipv4_puertos__V | main.tf:28 | aws_security_group_rule.ssh_ipv4 | 4728cd65-a20c-49da-8b31-9c08b423e4db -> BP-SG-ALL-PROTOCOLS
+  [kics   ] sembrado__caso_05_vpc_sg_ipv4_puertos__V | main.tf:39 | aws_security_group_rule.rdp_ipv4 | 4728cd65-a20c-49da-8b31-9c08b423e4db -> BP-SG-ALL-PROTOCOLS
+  [kics   ] sembrado__caso_05_vpc_sg_ipv4_puertos__V | main.tf:50 | aws_security_group_rule.todos_protocolos | 4728cd65-a20c-49da-8b31-9c08b423e4db -> BP-SG-ALL-PROTOCOLS
+  [kics   ] sembrado__caso_05_vpc_sg_ipv4_puertos__V | main.tf:44 | aws_security_group_rule.todos_protocolos | ffac8a12-322e-42c1-b9b9-81ff85c39ef7 -> BP-SG-HTTP-OPEN
+  [kics   ] sembrado__caso_05_vpc_sg_ipv4_puertos__V | main.tf:44 | aws_security_group_rule.todos_protocolos | 65905cec-d691-4320-b320-2000436cb696 -> CIS-5.2-SSH|CIS-5.3
+  [kics   ] sembrado__caso_05_vpc_sg_ipv4_puertos__V | main.tf:22 | aws_security_group_rule.ssh_ipv4 | 65905cec-d691-4320-b320-2000436cb696 -> CIS-5.2-SSH|CIS-5.3
