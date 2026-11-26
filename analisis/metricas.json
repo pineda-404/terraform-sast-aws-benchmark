@@ -1,0 +1,382 @@
+{
+  "fecha_calculo": "2026-11-26",
+  "semilla_bootstrap": 20261126,
+  "replicas_bootstrap": 10000,
+  "validacion_implementacion": {
+    "fleiss_propio": 0.563912847974,
+    "fleiss_statsmodels": 0.563912847974,
+    "diff_fleiss": 0.0,
+    "ac1_analitico_diff": 2.220446049250313e-16
+  },
+  "corpus": {
+    "modulos_totales": 45,
+    "modulos_en_U": 44,
+    "modulos_sin_unidades_U": [
+      "truemark__bitbucket-oidc-provider"
+    ],
+    "unidades_U": 508,
+    "por_servicio": {
+      "IAM": {
+        "modulos_totales": 15,
+        "modulos_en_U": 14,
+        "unidades_U": 91
+      },
+      "S3": {
+        "modulos_totales": 15,
+        "modulos_en_U": 15,
+        "unidades_U": 163
+      },
+      "VPC_SG": {
+        "modulos_totales": 15,
+        "modulos_en_U": 15,
+        "unidades_U": 254
+      }
+    }
+  },
+  "h1_cobertura": {
+    "global": {
+      "3/3": 14,
+      "2/3": 12,
+      "1/3": 3,
+      "0/3": 1,
+      "total": 30,
+      "cubiertos_al_menos_una": 29
+    },
+    "por_servicio": {
+      "IAM": {
+        "3/3": 4,
+        "2/3": 4,
+        "1/3": 1,
+        "0/3": 1,
+        "total": 10
+      },
+      "S3": {
+        "3/3": 4,
+        "2/3": 4,
+        "1/3": 2,
+        "0/3": 0,
+        "total": 10
+      },
+      "VPC_SG": {
+        "3/3": 6,
+        "2/3": 4,
+        "1/3": 0,
+        "0/3": 0,
+        "total": 10
+      }
+    },
+    "por_herramienta": {
+      "checkov": 28,
+      "trivy": 19,
+      "kics": 22
+    },
+    "J_reglas": 0.4828,
+    "criterio": "J_reglas < 0.50",
+    "cumple_H1": true
+  },
+  "prevalencia": {
+    "denominador_global": 45,
+    "global": {
+      "checkov": {
+        "modulos_con_smell": 10,
+        "denominador": 45,
+        "proporcion": 0.2222,
+        "porcentaje": 22.2,
+        "unidades_positivas": 20
+      },
+      "trivy": {
+        "modulos_con_smell": 15,
+        "denominador": 45,
+        "proporcion": 0.3333,
+        "porcentaje": 33.3,
+        "unidades_positivas": 31
+      },
+      "kics": {
+        "modulos_con_smell": 14,
+        "denominador": 45,
+        "proporcion": 0.3111,
+        "porcentaje": 31.1,
+        "unidades_positivas": 34
+      }
+    },
+    "por_servicio": {
+      "IAM": {
+        "checkov": {
+          "modulos_con_smell": 1,
+          "denominador": 15,
+          "proporcion": 0.0667,
+          "porcentaje": 6.7
+        },
+        "trivy": {
+          "modulos_con_smell": 0,
+          "denominador": 15,
+          "proporcion": 0.0,
+          "porcentaje": 0.0
+        },
+        "kics": {
+          "modulos_con_smell": 3,
+          "denominador": 15,
+          "proporcion": 0.2,
+          "porcentaje": 20.0
+        }
+      },
+      "S3": {
+        "checkov": {
+          "modulos_con_smell": 8,
+          "denominador": 15,
+          "proporcion": 0.5333,
+          "porcentaje": 53.3
+        },
+        "trivy": {
+          "modulos_con_smell": 12,
+          "denominador": 15,
+          "proporcion": 0.8,
+          "porcentaje": 80.0
+        },
+        "kics": {
+          "modulos_con_smell": 8,
+          "denominador": 15,
+          "proporcion": 0.5333,
+          "porcentaje": 53.3
+        }
+      },
+      "VPC_SG": {
+        "checkov": {
+          "modulos_con_smell": 1,
+          "denominador": 15,
+          "proporcion": 0.0667,
+          "porcentaje": 6.7
+        },
+        "trivy": {
+          "modulos_con_smell": 3,
+          "denominador": 15,
+          "proporcion": 0.2,
+          "porcentaje": 20.0
+        },
+        "kics": {
+          "modulos_con_smell": 3,
+          "denominador": 15,
+          "proporcion": 0.2,
+          "porcentaje": 20.0
+        }
+      }
+    }
+  },
+  "h2_concordancia": {
+    "global": {
+      "N": 508,
+      "modulos": 44,
+      "P_o": 0.9311,
+      "fleiss_kappa": 0.5639,
+      "gwet_ac1": 0.9487,
+      "patrones": {
+        "(0,0,0)": 459,
+        "(0,0,1)": 13,
+        "(0,1,0)": 12,
+        "(0,1,1)": 4,
+        "(1,0,0)": 2,
+        "(1,0,1)": 3,
+        "(1,1,0)": 1,
+        "(1,1,1)": 14
+      },
+      "desacuerdos": 35,
+      "bootstrap": {
+        "replicas_totales": 10000,
+        "semilla": 20261126,
+        "modulos_en_cluster": 44,
+        "replicas_descartadas_fleiss": 0,
+        "po_ic95": [
+          0.8873,
+          0.9617
+        ],
+        "fleiss_ic95": [
+          0.2778,
+          0.7404
+        ],
+        "ac1_ic95": [
+          0.9117,
+          0.9727
+        ]
+      }
+    },
+    "por_servicio": {
+      "IAM": {
+        "N": 91,
+        "modulos": 14,
+        "P_o": 0.9231,
+        "fleiss_kappa": 0.1957,
+        "gwet_ac1": 0.9452,
+        "patrones": {
+          "(0,0,0)": 84,
+          "(0,0,1)": 5,
+          "(1,0,1)": 2
+        },
+        "desacuerdos": 7,
+        "bootstrap": {
+          "replicas_totales": 10000,
+          "semilla": 20261127,
+          "modulos_en_cluster": 14,
+          "replicas_descartadas_fleiss": 353,
+          "po_ic95": [
+            0.6829,
+            1.0
+          ],
+          "fleiss_ic95": [
+            -0.0689,
+            0.3182
+          ],
+          "ac1_ic95": [
+            0.7225,
+            1.0
+          ]
+        }
+      },
+      "S3": {
+        "N": 163,
+        "modulos": 15,
+        "P_o": 0.865,
+        "fleiss_kappa": 0.501,
+        "gwet_ac1": 0.8902,
+        "patrones": {
+          "(0,0,0)": 134,
+          "(0,0,1)": 5,
+          "(0,1,0)": 9,
+          "(0,1,1)": 4,
+          "(1,0,0)": 2,
+          "(1,0,1)": 1,
+          "(1,1,0)": 1,
+          "(1,1,1)": 7
+        },
+        "desacuerdos": 22,
+        "bootstrap": {
+          "replicas_totales": 10000,
+          "semilla": 20261128,
+          "modulos_en_cluster": 15,
+          "replicas_descartadas_fleiss": 0,
+          "po_ic95": [
+            0.8154,
+            0.9102
+          ],
+          "fleiss_ic95": [
+            0.2544,
+            0.6818
+          ],
+          "ac1_ic95": [
+            0.8423,
+            0.9293
+          ]
+        }
+      },
+      "VPC_SG": {
+        "N": 254,
+        "modulos": 15,
+        "P_o": 0.9764,
+        "fleiss_kappa": 0.7696,
+        "gwet_ac1": 0.9831,
+        "patrones": {
+          "(0,0,0)": 241,
+          "(0,0,1)": 3,
+          "(0,1,0)": 3,
+          "(1,1,1)": 7
+        },
+        "desacuerdos": 6,
+        "bootstrap": {
+          "replicas_totales": 10000,
+          "semilla": 20261129,
+          "modulos_en_cluster": 15,
+          "replicas_descartadas_fleiss": 22,
+          "po_ic95": [
+            0.9456,
+            0.9938
+          ],
+          "fleiss_ic95": [
+            -0.0146,
+            0.92
+          ],
+          "ac1_ic95": [
+            0.958,
+            0.9957
+          ]
+        }
+      }
+    },
+    "criterio": "IC95_sup(fleiss_kappa) < 0.60",
+    "cumple_H2": false
+  },
+  "cohen_pares": {
+    "checkov__trivy": {
+      "po_par": 0.9587,
+      "cohen_kappa": 0.5675
+    },
+    "checkov__kics": {
+      "po_par": 0.9606,
+      "cohen_kappa": 0.6103
+    },
+    "trivy__kics": {
+      "po_par": 0.9429,
+      "cohen_kappa": 0.5234
+    }
+  },
+  "h3a_iam_vulnerable": {
+    "denominador_rutas": 31,
+    "por_herramienta": {
+      "checkov": {
+        "permisivo_n": 31,
+        "permisivo_pct": 100.0,
+        "estricto_n": 20,
+        "estricto_pct": 64.5,
+        "caida_pp": 35.5
+      },
+      "trivy": {
+        "permisivo_n": 30,
+        "permisivo_pct": 96.8,
+        "estricto_n": 10,
+        "estricto_pct": 32.3,
+        "caida_pp": 64.5
+      },
+      "kics": {
+        "permisivo_n": 31,
+        "permisivo_pct": 100.0,
+        "estricto_n": 19,
+        "estricto_pct": 61.3,
+        "caida_pp": 38.7
+      }
+    },
+    "criterio": "Ninguna herramienta > 85% recall estricto y cada una cae > 20 pp respecto del permisivo",
+    "cumple_H3a": true
+  },
+  "h3b_casos_sembrados": {
+    "denominador_controles": 27,
+    "por_herramienta": {
+      "checkov": {
+        "detectados_V": 18,
+        "detectados_V_pct": 66.7,
+        "fp_control_S": 0,
+        "fp_control_S_pct": 0.0,
+        "alertas_totales_S": 33,
+        "alertas_fp_control_S": 0,
+        "incidentales_S": 33
+      },
+      "trivy": {
+        "detectados_V": 17,
+        "detectados_V_pct": 63.0,
+        "fp_control_S": 1,
+        "fp_control_S_pct": 3.7,
+        "alertas_totales_S": 29,
+        "alertas_fp_control_S": 1,
+        "incidentales_S": 28
+      },
+      "kics": {
+        "detectados_V": 18,
+        "detectados_V_pct": 66.7,
+        "fp_control_S": 0,
+        "fp_control_S_pct": 0.0,
+        "alertas_totales_S": 43,
+        "alertas_fp_control_S": 0,
+        "incidentales_S": 43
+      }
+    },
+    "criterio": "Incidencias diferenciadas de falsos positivos de control entre herramientas (descriptivo)",
+    "cumple_H3b": true
+  }
+}
