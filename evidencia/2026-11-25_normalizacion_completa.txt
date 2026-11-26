@@ -1,0 +1,8 @@
+Normalizacion modo=completo (2026-11-25)
+Objetivos procesados: 60
+Conteo de alertas por herramienta (cuadre crudo = atribuida + fuera_catalogo + excluida_sin_recurso_rm):
+  - checkov: crudas= 442 | atribuidas= 223 | fuera_catalogo= 151 | excluidas_sin_rm=  68
+  - trivy  : crudas= 187 | atribuidas= 164 | fuera_catalogo=   6 | excluidas_sin_rm=  17
+  - kics   : crudas=1158 | atribuidas= 128 | fuera_catalogo= 720 | excluidas_sin_rm= 310
+Unidades (r, c) en U (corpus, C_comp 3/3): 508 (acuerdos 0/0/0: 459)
+Archivos escritos: /home/pineda/TuT/trabajo-trabajo/Cursos_Uni/26-2/Tesis_1/Experimentos/resultados/normalizados/alertas.csv y /home/pineda/TuT/trabajo-trabajo/Cursos_Uni/26-2/Tesis_1/Experimentos/analisis/unidades.csv
