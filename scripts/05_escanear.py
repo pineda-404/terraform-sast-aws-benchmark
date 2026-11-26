@@ -260,6 +260,7 @@ def construir_objetivos(root: Path, modo: str) -> list[dict[str, Any]]:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--modo", choices=("piloto", "completo"), default="piloto")
+    ap.add_argument("--reanudar", action="store_true", help="Omitir pares (objetivo, herramienta) con JSON valido existente")
     args = ap.parse_args()
 
     root = Path(__file__).resolve().parent.parent
@@ -300,8 +301,12 @@ def main() -> int:
                 ("kics", lambda p: correr_kics(kc_img, stage, p, uid_gid)),
             ):
                 out_json = crudos_base / tool / f"{oid}.json"
-                ok, secs, msg = fn(out_json)
-                estado = "OK" if ok else "FAIL"
+                if args.reanudar and validar_json(out_json)[0]:
+                    ok, secs, msg = True, 0.0, "skip_existente"
+                    estado = "SKIP"
+                else:
+                    ok, secs, msg = fn(out_json)
+                    estado = "OK" if ok else "FAIL"
                 if not ok:
                     fallos += 1
                 print(f"    {tool:7}: {estado:4} ({secs:5.1f}s) {'' if ok else msg}")

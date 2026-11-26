@@ -468,6 +468,10 @@ def main() -> int:
         ev_path = root / "evidencia" / f"{dt.date.today().isoformat()}_piloto_revision.txt"
         ev_path.write_text("\n".join(lineas) + "\n", encoding="utf-8")
         print(f"Reporte de revision manual guardado en: {ev_path}")
+    else:
+        ev_path = root / "evidencia" / f"{dt.date.today().isoformat()}_normalizacion_completa.txt"
+        ev_path.write_text("\n".join(lineas) + "\n", encoding="utf-8")
+        print(f"Resumen de normalizacion guardado en: {ev_path}")
 
     print("\n".join(lineas[:12]))
     return 0

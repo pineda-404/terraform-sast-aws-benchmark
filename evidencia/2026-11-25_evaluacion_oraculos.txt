@@ -1,0 +1,12 @@
+Evaluacion de oraculos de control - Fase 5 (2026-11-25)
+
+1. IAM Vulnerable (31 rutas, decision 1 vez por regla en matriz/iam_vulnerable_reglas.csv):
+   Reglas distintas sobre recursos IAM en privesc*.tf: 60
+   - checkov: permisivo=31/31 (100.0%) | estricto=20/31 ( 64.5%) | caida= 35.5 pp
+   - trivy  : permisivo=30/31 ( 96.8%) | estricto=10/31 ( 32.3%) | caida= 64.5 pp
+   - kics   : permisivo=31/31 (100.0%) | estricto=19/31 ( 61.3%) | caida= 38.7 pp
+
+2. Casos sembrados (7 casos, 27 controles V/S, analisis/casos_sembrados.csv):
+   - checkov: detectados_V=18/27 ( 66.7%) | FP_control_S= 0/27 ( 0.0%) | alertas_totales_S= 33 (control_FP=0, incidentales=33)
+   - trivy  : detectados_V=17/27 ( 63.0%) | FP_control_S= 1/27 ( 3.7%) | alertas_totales_S= 29 (control_FP=1, incidentales=28)
+   - kics   : detectados_V=18/27 ( 66.7%) | FP_control_S= 0/27 ( 0.0%) | alertas_totales_S= 43 (control_FP=0, incidentales=43)
