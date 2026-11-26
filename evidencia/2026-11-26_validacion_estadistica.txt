@@ -1,0 +1,14 @@
+Validacion estadistica obligatoria - Fase 6 (2026-11-26)
+
+1. Validacion de kappa de Fleiss sobre analisis/unidades.csv (N=508, n=3):
+   - Implementacion propia : 0.563912847974
+   - statsmodels (fleiss)  : 0.563912847974
+   - Diferencia absoluta   : 0.000e+00 (< 1e-12 OK)
+
+2. Validacion analitica de AC1 de Gwet y Fleiss (N=10, n=3, Q=2; 7x(0,0,0), 1x(1,1,1), 2x(0,0,1)):
+   - AC1 implementacion    : 0.815384615385
+   - AC1 valor exacto      : 0.815384615385 (106/130)
+   - Diferencia absoluta   : 2.220e-16 (< 1e-12 OK)
+   - Fleiss implementacion : 0.520000000000 vs statsmodels 0.520000000000 (diff=0.000e+00 OK)
+
+3. Valores observados globales en U: P_o=0.931102, Fleiss=0.563913, AC1=0.948661
